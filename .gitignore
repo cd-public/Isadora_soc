@@ -1,0 +1,3 @@
+*.dtrace
+vcds/origs/*.vcd
+vcds/otps/*.vcd
