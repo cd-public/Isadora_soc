@@ -24,11 +24,12 @@ def refine(name):
 			if step1:
 				
 				if "var reg" in line or "var wire" in line:
-					splits = line.split()
-					if splits[4] not in orig_design_regs and int(splits[2]) < 256: # exclude buffers
-						vcd_out.write(line)
-						orig_design_regs.add(splits[4])
-						refined_vars = refined_vars + [splits[3]]
+					if "clk" not in line:
+						splits = line.split()
+						if splits[4] not in orig_design_regs and int(splits[2]) < 256: # exclude buffers
+							vcd_out.write(line)
+							orig_design_regs.add(splits[4])
+							refined_vars = refined_vars + [splits[3]]
 					
 			if "dumpvars" in line:
 				# vcd_out.write("$enddefinitions $end\n$dumpvars\n#0\n")

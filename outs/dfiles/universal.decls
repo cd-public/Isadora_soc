@@ -4,11 +4,6 @@ var-comparability implicit
 
 ppt ..tick():::ENTER
   ppt-type enter
-  variable clk_i
-	var-kind variable
-	rep-type string
-	dec-type char*
-	comparability 4 
   variable intr_otp_operation_done_o
 	var-kind variable
 	rep-type string
@@ -335,11 +330,6 @@ ppt ..tick():::ENTER
 	dec-type char*
 	comparability 4 
   variable rst_ni
-	var-kind variable
-	rep-type string
-	dec-type char*
-	comparability 4 
-  variable clk_edn_i
 	var-kind variable
 	rep-type string
 	dec-type char*
@@ -3827,11 +3817,6 @@ ppt ..tick():::ENTER
 
 ppt ..tick():::EXIT0
   ppt-type subexit
-  variable clk_i
-	var-kind variable
-	rep-type string
-	dec-type char*
-	comparability 4 
   variable intr_otp_operation_done_o
 	var-kind variable
 	rep-type string
@@ -4158,11 +4143,6 @@ ppt ..tick():::EXIT0
 	dec-type char*
 	comparability 4 
   variable rst_ni
-	var-kind variable
-	rep-type string
-	dec-type char*
-	comparability 4 
-  variable clk_edn_i
 	var-kind variable
 	rep-type string
 	dec-type char*

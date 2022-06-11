@@ -1,0 +1,2085 @@
+Daikon version 5.8.8, released March 2, 2021; http://plse.cs.washington.edu/daikon.
+Reading declaration files .(read 1 decls file)
+Processing trace data; reading 2 dtrace files:
+
+===========================================================================
+..tick():::ENTER
+intr_otp_error_o == lc_creator_seed_sw_rw_en_i
+otp_obs_o == lc_seed_hw_rd_en_i
+otp_obs_o == lc_dft_en_i
+otp_obs_o == lc_check_byp_en_i
+otp_obs_o == otp_ext_voltage_h_io
+otp_obs_o == intg_error
+otp_obs_o == lc_creator_seed_sw_rw_en
+otp_obs_o == tlul_req
+otp_obs_o == tlul_addr
+otp_obs_o == part_tlul_rerror
+otp_obs_o == dai_prog_idle
+otp_obs_o == lci_prog_idle
+otp_obs_o == part_error
+otp_obs_o == otp_operation_done
+otp_obs_o == cnsty_chk_ack
+otp_obs_o == lfsr_edn_ack
+otp_obs_o == edn_req
+otp_obs_o == part_otp_arb_req
+otp_obs_o == part_otp_arb_gnt
+otp_obs_o == otp_arb_valid
+otp_obs_o == otp_prim_ready
+otp_obs_o == otp_arb_idx
+otp_obs_o == part_otp_err
+otp_obs_o == otp_rvalid
+otp_obs_o == otp_test_vect
+otp_obs_o == scrmbl_arb_req_ready
+otp_obs_o == scrmbl_arb_rsp_valid
+otp_obs_o == pwr_otp_rsp_d
+otp_obs_o == rst_edn_ni
+otp_obs_o == scan_en_i
+otp_obs_o == scan_rst_ni
+otp_obs_o == scanmode_i
+otp_obs_o == cio_test_o
+otp_obs_o == cio_test_en_o
+otp_obs_o == lc_escalate_en
+otp_obs_o == lc_escalate_en_any
+otp_obs_o == tlul_gnt
+otp_obs_o == tlul_rvalid
+otp_obs_o == tlul_rerror
+otp_obs_o == tlul_rdata
+otp_obs_o == tlul_part_idx
+otp_obs_o == tlul_oob_err_d
+otp_obs_o == tlul_oob_err_q
+otp_obs_o == part_tlul_req
+otp_obs_o == part_tlul_addr
+otp_obs_o == unused_digest
+otp_obs_o == dai_req
+otp_obs_o == dai_cmd
+otp_obs_o == dai_addr
+otp_obs_o == dai_wdata
+otp_obs_o == otp_idle_d
+otp_obs_o == otp_idle_q
+otp_obs_o == part_errors_reduced
+otp_obs_o == otp_arb_ready
+otp_obs_o == otp_prim_valid
+otp_obs_o == otp_rsp_fifo_valid
+otp_obs_o == part_otp_rvalid
+otp_obs_o == part_scrmbl_req_ready
+otp_obs_o == part_scrmbl_rsp_valid
+otp_obs_o == gen_partitions[0].gen_unbuffered.unused_part_scrmbl_sigs
+otp_obs_o == edn_i
+otp_obs_o == core_tl_o
+otp_obs_o == prim_tl_o
+otp_obs_o == otp_ast_pwr_seq_h_i
+otp_obs_o == otp_alert_o
+otp_obs_o == pwr_otp_o
+otp_obs_o == lc_otp_vendor_test_o
+otp_obs_o == lc_otp_program_o
+otp_obs_o == flash_otp_key_i
+otp_obs_o == otbn_otp_key_i
+otp_obs_o == otbn_otp_key_o
+otp_obs_o == tl_win_h2d
+otp_obs_o == reg2hw
+otp_obs_o == part_access
+otp_obs_o == otp_arb_bundle
+otp_obs_o == prim_tl_h2d_gated
+otp_obs_o == obs_ctrl_i
+otp_obs_o == part_access_pre
+otp_obs_o == devmode_i
+otp_obs_o == reg_we_check
+otp_obs_o == err_q
+otp_obs_o == intr_state_otp_operation_done_wd
+otp_obs_o == intr_state_otp_error_wd
+otp_obs_o == intr_enable_we
+otp_obs_o == intr_enable_otp_error_wd
+otp_obs_o == intr_test_we
+otp_obs_o == intr_test_otp_operation_done_wd
+otp_obs_o == intr_test_otp_error_wd
+otp_obs_o == alert_test_fatal_check_error_wd
+otp_obs_o == alert_test_fatal_bus_integ_error_wd
+otp_obs_o == status_re
+otp_obs_o == status_vendor_test_error_qs
+otp_obs_o == status_creator_sw_cfg_error_qs
+otp_obs_o == status_owner_sw_cfg_error_qs
+otp_obs_o == status_hw_cfg_error_qs
+otp_obs_o == status_secret0_error_qs
+otp_obs_o == status_secret1_error_qs
+otp_obs_o == status_secret2_error_qs
+otp_obs_o == status_life_cycle_error_qs
+otp_obs_o == status_dai_error_qs
+otp_obs_o == status_lci_error_qs
+otp_obs_o == status_timeout_error_qs
+otp_obs_o == status_lfsr_fsm_error_qs
+otp_obs_o == status_scrambling_fsm_error_qs
+otp_obs_o == status_key_deriv_fsm_error_qs
+otp_obs_o == err_code_err_code_2_qs
+otp_obs_o == err_code_err_code_3_qs
+otp_obs_o == err_code_err_code_4_qs
+otp_obs_o == err_code_err_code_5_qs
+otp_obs_o == err_code_err_code_6_qs
+otp_obs_o == err_code_err_code_8_qs
+otp_obs_o == err_code_err_code_9_qs
+otp_obs_o == direct_access_regwen_re
+otp_obs_o == owner_sw_cfg_read_lock_we
+otp_obs_o == owner_sw_cfg_read_lock_wd
+otp_obs_o == vendor_test_digest_0_qs
+otp_obs_o == vendor_test_digest_1_re
+otp_obs_o == vendor_test_digest_1_qs
+otp_obs_o == creator_sw_cfg_digest_0_re
+otp_obs_o == creator_sw_cfg_digest_0_qs
+otp_obs_o == creator_sw_cfg_digest_1_re
+otp_obs_o == creator_sw_cfg_digest_1_qs
+otp_obs_o == owner_sw_cfg_digest_0_re
+otp_obs_o == owner_sw_cfg_digest_0_qs
+otp_obs_o == owner_sw_cfg_digest_1_re
+otp_obs_o == owner_sw_cfg_digest_1_qs
+otp_obs_o == hw_cfg_digest_0_re
+otp_obs_o == hw_cfg_digest_1_re
+otp_obs_o == secret0_digest_0_re
+otp_obs_o == secret0_digest_1_re
+otp_obs_o == secret1_digest_0_re
+otp_obs_o == secret1_digest_0_qs
+otp_obs_o == secret1_digest_1_re
+otp_obs_o == secret1_digest_1_qs
+otp_obs_o == secret2_digest_0_re
+otp_obs_o == secret2_digest_0_qs
+otp_obs_o == secret2_digest_1_re
+otp_obs_o == secret2_digest_1_qs
+otp_obs_o == intr_test_qe
+otp_obs_o == intr_test_flds_we
+otp_obs_o == alert_test_qe
+otp_obs_o == alert_test_flds_we
+otp_obs_o == direct_access_cmd_qe
+otp_obs_o == direct_access_cmd_flds_we
+otp_obs_o == integrity_check_period_gated_we
+otp_obs_o == consistency_check_period_gated_we
+otp_obs_o == vendor_test_read_lock_gated_we
+otp_obs_o == creator_sw_cfg_read_lock_gated_we
+otp_obs_o == owner_sw_cfg_read_lock_gated_we
+otp_obs_o == unused_wdata
+otp_obs_o == tl_i
+otp_obs_o == tl_reg_d2h
+otp_obs_o == tl_o_pre
+otp_obs_o == tl_win_o
+otp_obs_o == tl_reg_h2d
+otp_obs_o == lc_en_o
+otp_obs_o == gen_buffs[0].lc_en_out
+otp_obs_o == gen_buffs[3].lc_en_out
+otp_obs_o == gen_buffs[6].lc_en_out
+otp_obs_o == gen_buffs[7].lc_en_out
+otp_obs_o == gen_buffs[8].lc_en_out
+otp_obs_o == gen_buffs[9].lc_en_out
+otp_obs_o == gen_buffs[10].lc_en_out
+otp_obs_o == gen_buffs[11].lc_en_out
+otp_obs_o == gen_buffs[12].lc_en_out
+otp_obs_o == en_ifetch_i
+otp_obs_o == req_o
+otp_obs_o == we_o
+otp_obs_o == addr_o
+otp_obs_o == reqfifo_wready
+otp_obs_o == reqfifo_rvalid
+otp_obs_o == sramreqfifo_wready
+otp_obs_o == rspfifo_wready
+otp_obs_o == rspfifo_wvalid
+otp_obs_o == rspfifo_rready
+otp_obs_o == gen_normal_case.gen_no_dataport.unused_data
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[11].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[12].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[13].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[14].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == tl_h2d_error
+otp_obs_o == pwr_seq_o
+otp_obs_o == pwr_seq_h_i
+otp_obs_o == ext_voltage_io
+otp_obs_o == test_ctrl_i
+otp_obs_o == test_status_o
+otp_obs_o == test_vect_o
+otp_obs_o == ready_o
+otp_obs_o == valid_i
+otp_obs_o == size_i
+otp_obs_o == cmd_i
+otp_obs_o == addr_i
+otp_obs_o == wdata_i
+otp_obs_o == test_tl_i
+otp_obs_o == otp_alert_src_o
+otp_obs_o == clr_i
+otp_obs_o == wvalid_i
+otp_obs_o == gen_normal_fifo.empty
+otp_obs_o == rready_i
+otp_obs_o == full_o
+otp_obs_o == gen_normal_fifo.fifo_wptr
+otp_obs_o == gen_normal_fifo.fifo_incr_wptr
+otp_obs_o == gen_normal_fifo.fifo_incr_rptr
+otp_obs_o == gen_normal_fifo.fifo_empty
+otp_obs_o == gen_normal_fifo.under_rst
+otp_obs_o == gen_normal_fifo.full
+otp_obs_o == gen_normal_fifo.wptr_msb
+otp_obs_o == gen_normal_fifo.wptr_value
+otp_obs_o == mode_i
+otp_obs_o == sel_i
+otp_obs_o == cnt_err
+otp_obs_o == digest_init
+otp_obs_o == data_state_sel
+otp_obs_o == digest_state_en
+otp_obs_o == cnt_clr
+otp_obs_o == valid_d
+otp_obs_o == valid_q
+otp_obs_o == init_done_o
+otp_obs_o == error_o
+otp_obs_o == dai_addr_i
+otp_obs_o == dai_cmd_i
+otp_obs_o == dai_req_i
+otp_obs_o == dai_wdata_i
+otp_obs_o == dai_idle_o
+otp_obs_o == dai_rdata_o
+otp_obs_o == otp_req_o
+otp_obs_o == otp_cmd_o
+otp_obs_o == otp_size_o
+otp_obs_o == otp_wdata_o
+otp_obs_o == otp_addr_o
+otp_obs_o == otp_rvalid_i
+otp_obs_o == otp_err_i
+otp_obs_o == scrmbl_mtx_req_o
+otp_obs_o == scrmbl_mtx_gnt_i
+otp_obs_o == scrmbl_cmd_o
+otp_obs_o == scrmbl_mode_o
+otp_obs_o == scrmbl_sel_o
+otp_obs_o == scrmbl_data_o
+otp_obs_o == scrmbl_valid_o
+otp_obs_o == scrmbl_ready_i
+otp_obs_o == scrmbl_valid_i
+otp_obs_o == part_idx
+otp_obs_o == part_sel_oh
+otp_obs_o == dai_prog_idle_o
+otp_obs_o == dai_cmd_done_o
+otp_obs_o == otp_gnt_i
+otp_obs_o == error_d
+otp_obs_o == error_q
+otp_obs_o == data_en
+otp_obs_o == data_clr
+otp_obs_o == data_sel
+otp_obs_o == base_sel_d
+otp_obs_o == base_sel_q
+otp_obs_o == data_q
+otp_obs_o == digest_addr_lut
+otp_obs_o == addr_base
+otp_obs_o == addr_calc
+otp_obs_o == lci_en_i
+otp_obs_o == lc_ack_o
+otp_obs_o == lc_err_o
+otp_obs_o == lci_prog_idle_o
+otp_obs_o == lc_req_i
+otp_obs_o == unused_rdata
+otp_obs_o == Info
+otp_obs_o == PartInfoDefault
+otp_obs_o == kdi_en_i
+otp_obs_o == scrmbl_key_seed_valid_i
+otp_obs_o == sram_data_key_seed_i
+otp_obs_o == gnt
+otp_obs_o == req_valid
+otp_obs_o == seed_cnt_err
+otp_obs_o == entropy_cnt_err
+otp_obs_o == seed_cnt
+otp_obs_o == entropy_cnt
+otp_obs_o == key_out_q
+otp_obs_o == req
+otp_obs_o == req_ready
+otp_obs_o == seed_cnt_clr
+otp_obs_o == seed_cnt_en
+otp_obs_o == entropy_cnt_clr
+otp_obs_o == entropy_cnt_en
+otp_obs_o == seed_valid_reg_en
+otp_obs_o == key_reg_en
+otp_obs_o == nonce_reg_en
+otp_obs_o == seed_valid_d
+otp_obs_o == seed_valid_q
+otp_obs_o == key_out_d
+otp_obs_o == nonce_out_d
+otp_obs_o == nonce_out_q
+otp_obs_o == edn_req_d
+otp_obs_o == edn_req_q
+otp_obs_o == mubi_i
+otp_obs_o == mubi_o
+otp_obs_o == mubi
+otp_obs_o == mubi_int
+otp_obs_o == mubi_out
+otp_obs_o == alert_test_i
+otp_obs_o == alert_req_i
+otp_obs_o == alert_state_o
+otp_obs_o == ping_sigint
+otp_obs_o == ping_event
+otp_obs_o == ack_sigint
+otp_obs_o == ack_level
+otp_obs_o == alert_pq
+otp_obs_o == alert_set_q
+otp_obs_o == ping_set_q
+otp_obs_o == alert_ack_o
+otp_obs_o == ping_n
+otp_obs_o == ping_p
+otp_obs_o == ack_p
+otp_obs_o == alert_pd
+otp_obs_o == sigint_detected
+otp_obs_o == alert_set_d
+otp_obs_o == alert_clr
+otp_obs_o == alert_test_set_d
+otp_obs_o == alert_test_set_q
+otp_obs_o == ping_set_d
+otp_obs_o == ping_clr
+otp_obs_o == alert_req_trigger
+otp_obs_o == alert_test_trigger
+otp_obs_o == ping_trigger
+otp_obs_o == alert_req
+otp_obs_o == alert_trigger
+otp_obs_o == digest_o
+otp_obs_o == tlul_req_i
+otp_obs_o == tlul_gnt_o
+otp_obs_o == tlul_addr_i
+otp_obs_o == tlul_rerror_o
+otp_obs_o == tlul_rvalid_o
+otp_obs_o == tlul_rdata_o
+otp_obs_o == ecc_err
+otp_obs_o == otp_addr_sel
+otp_obs_o == digest_reg_en
+otp_obs_o == tlul_addr_d
+otp_obs_o == tlul_addr_q
+otp_obs_o == pending_tlul_error_d
+otp_obs_o == pending_tlul_error_q
+otp_obs_o == gen_unused.unused_bits
+otp_obs_o == gen_digest_write_lock.digest_locked
+otp_obs_o == access_i
+otp_obs_o == integ_chk_ack_o
+otp_obs_o == cnsty_chk_ack_o
+otp_obs_o == check_byp_en_i
+otp_obs_o == dout_locked_q
+otp_obs_o == integ_chk_req_i
+otp_obs_o == cnsty_chk_req_i
+otp_obs_o == base_sel
+otp_obs_o == dout_locked_d
+otp_obs_o == buffer_reg_en
+lc_escalate_en_i == dai_idle
+lc_escalate_en_i == dai_rdata
+lc_escalate_en_i == otp_rsp_fifo_ready
+lc_escalate_en_i == otp_fifo_valid
+lc_escalate_en_i == scrmbl_mtx_valid
+lc_escalate_en_i == part_init_req
+lc_escalate_en_i == pwr_otp_req_synced
+lc_escalate_en_i == rst_ni
+lc_escalate_en_i == test_tokens_valid
+lc_escalate_en_i == pwr_otp_i
+lc_escalate_en_i == sram_otp_key_i
+lc_escalate_en_i == intr_enable_otp_operation_done_wd
+lc_escalate_en_i == err_code_err_code_7_qs
+lc_escalate_en_i == tl_o
+lc_escalate_en_i == gen_buffs[1].lc_en_out
+lc_escalate_en_i == wmask_o
+lc_escalate_en_i == rvalid_i
+lc_escalate_en_i == rspfifo_rvalid
+lc_escalate_en_i == sramreqfifo_rready
+lc_escalate_en_i == gen_normal_case.gen_tree[3].gen_level[0].gen_nodes.sel
+lc_escalate_en_i == gen_normal_case.gen_tree[3].gen_level[1].gen_nodes.sel
+lc_escalate_en_i == gen_normal_case.gen_tree[3].gen_level[2].gen_nodes.sel
+lc_escalate_en_i == gen_normal_case.gen_tree[3].gen_level[3].gen_nodes.sel
+lc_escalate_en_i == gen_normal_case.gen_tree[3].gen_level[4].gen_nodes.sel
+lc_escalate_en_i == wready_o
+lc_escalate_en_i == rvalid_o
+lc_escalate_en_i == depth_o
+lc_escalate_en_i == gen_normal_fifo.rptr_msb
+lc_escalate_en_i == gen_normal_fifo.rptr_value
+lc_escalate_en_i == key_state_sel
+lc_escalate_en_i == cnt
+lc_escalate_en_i == dec_idx_out
+lc_escalate_en_i == data_state_en
+lc_escalate_en_i == key_state_en
+lc_escalate_en_i == digest_mode_d
+lc_escalate_en_i == digest_mode_q
+lc_escalate_en_i == cnt_en
+lc_escalate_en_i == d_i
+lc_escalate_en_i == q_o
+lc_escalate_en_i == intq
+lc_escalate_en_i == d_o
+lc_escalate_en_i == part_init_req_o
+lc_escalate_en_i == init_req_i
+lc_escalate_en_i == gen_no_flops.unused_logic
+lc_escalate_en_i == alert_nq
+lc_escalate_en_i == ack_n
+lc_escalate_en_i == alert_nd
+lc_seed_hw_rd_en == lc_dft_en
+lc_seed_hw_rd_en == key_edn_ack
+lc_seed_hw_rd_en == otp_error
+lc_seed_hw_rd_en == fatal_macro_error_d
+lc_seed_hw_rd_en == fatal_macro_error_q
+lc_seed_hw_rd_en == fatal_check_error_d
+lc_seed_hw_rd_en == fatal_check_error_q
+lc_seed_hw_rd_en == fatal_bus_integ_error_d
+lc_seed_hw_rd_en == fatal_bus_integ_error_q
+lc_seed_hw_rd_en == interrupt_triggers_d
+lc_seed_hw_rd_en == interrupt_triggers_q
+lc_seed_hw_rd_en == alerts
+lc_seed_hw_rd_en == alert_test
+lc_seed_hw_rd_en == integ_chk_trig
+lc_seed_hw_rd_en == cnsty_chk_trig
+lc_seed_hw_rd_en == pwr_otp_rsp_q
+lc_seed_hw_rd_en == unused_lci_scrmbl_sigs
+lc_seed_hw_rd_en == scrmbl_key_seed_valid
+lc_seed_hw_rd_en == sram_data_key_seed
+lc_seed_hw_rd_en == unused_kdi_otp_sigs
+lc_seed_hw_rd_en == rma_token_valid
+lc_seed_hw_rd_en == secrets_valid
+lc_seed_hw_rd_en == unused_buf_data
+lc_seed_hw_rd_en == gen_partitions[1].gen_unbuffered.unused_part_scrmbl_sigs
+lc_seed_hw_rd_en == gen_partitions[2].gen_unbuffered.unused_part_scrmbl_sigs
+lc_seed_hw_rd_en == gen_partitions[3].gen_buffered.unused_part_tlul_sigs
+lc_seed_hw_rd_en == gen_partitions[4].gen_buffered.unused_part_tlul_sigs
+lc_seed_hw_rd_en == gen_partitions[5].gen_buffered.unused_part_tlul_sigs
+lc_seed_hw_rd_en == gen_partitions[6].gen_buffered.unused_part_tlul_sigs
+lc_seed_hw_rd_en == gen_partitions[7].gen_lifecycle.unused_part_tlul_sigs
+lc_seed_hw_rd_en == gen_partitions[7].gen_lifecycle.unused_part_scrmbl_sigs
+lc_seed_hw_rd_en == edn_o
+lc_seed_hw_rd_en == core_tl_i
+lc_seed_hw_rd_en == prim_tl_i
+lc_seed_hw_rd_en == otp_ast_pwr_seq_o
+lc_seed_hw_rd_en == lc_otp_vendor_test_i
+lc_seed_hw_rd_en == reg_steer
+lc_seed_hw_rd_en == intr_state_we
+lc_seed_hw_rd_en == alert_test_we
+lc_seed_hw_rd_en == alert_test_fatal_macro_error_wd
+lc_seed_hw_rd_en == status_bus_integ_error_qs
+lc_seed_hw_rd_en == status_dai_idle_qs
+lc_seed_hw_rd_en == status_check_pending_qs
+lc_seed_hw_rd_en == err_code_re
+lc_seed_hw_rd_en == err_code_err_code_0_qs
+lc_seed_hw_rd_en == err_code_err_code_1_qs
+lc_seed_hw_rd_en == vendor_test_digest_0_re
+lc_seed_hw_rd_en == direct_access_cmd_gated_we
+lc_seed_hw_rd_en == direct_access_address_gated_we
+lc_seed_hw_rd_en == direct_access_wdata_0_gated_we
+lc_seed_hw_rd_en == direct_access_wdata_1_gated_we
+lc_seed_hw_rd_en == check_trigger_qe
+lc_seed_hw_rd_en == check_trigger_flds_we
+lc_seed_hw_rd_en == check_trigger_gated_we
+lc_seed_hw_rd_en == check_timeout_gated_we
+lc_seed_hw_rd_en == unused_be
+lc_seed_hw_rd_en == gen_buffs[4].lc_en_out
+tlul_part_sel_oh == alert_rx_i
+part_tlul_gnt == alert_tx_o
+part_tlul_gnt == integ_msk_zero
+chk_pending == chk_timeout
+chk_pending == lfsr_fsm_err
+chk_pending == scrmbl_fsm_err
+chk_pending == integ_chk_req
+chk_pending == reg_we
+chk_pending == reg_re
+chk_pending == reg_addr
+chk_pending == reg_wdata
+chk_pending == reg_be
+chk_pending == intr_state_otp_operation_done_qs
+chk_pending == intr_state_otp_error_qs
+chk_pending == intr_enable_otp_operation_done_qs
+chk_pending == intr_enable_otp_error_qs
+chk_pending == direct_access_address_qs
+chk_pending == direct_access_wdata_0_qs
+chk_pending == direct_access_wdata_1_qs
+chk_pending == check_trigger_regwen_qs
+chk_pending == check_regwen_qs
+chk_pending == check_timeout_qs
+chk_pending == integrity_check_period_qs
+chk_pending == consistency_check_period_qs
+chk_pending == vendor_test_read_lock_qs
+chk_pending == creator_sw_cfg_read_lock_qs
+chk_pending == owner_sw_cfg_read_lock_qs
+chk_pending == addr_hit
+chk_pending == intg_err_o
+chk_pending == reg_rdata
+chk_pending == reg_error
+chk_pending == addrmiss
+chk_pending == wr_err
+chk_pending == reg_rdata_next
+chk_pending == reg_busy
+chk_pending == intg_err
+chk_pending == reg_we_err
+part_otp_rdata == rdata_o
+part_otp_rdata == otp_rdata_i
+part_otp_rdata == data_mux
+otp_part_idx == part_init_done
+otp_part_idx == gen_buffs[2].lc_en_out
+otp_part_idx == gen_normal_case.gen_tree[3].gen_level[5].gen_nodes.sel
+otp_part_idx == gen_normal_fifo.storage_rdata
+otp_part_idx == gen_normal_fifo.rdata_int
+otp_part_idx == part_init_done_i
+scrmbl_mtx_idx == rdata_i
+scrmbl_mtx_idx == clr_cnsty_chk_trig
+part_scrmbl_rsp_data == rerror_i
+part_scrmbl_rsp_data == data_state_q
+part_scrmbl_rsp_data == scrmbl_data_i
+part_scrmbl_mtx_gnt == gen_buffs[5].lc_en_out
+tl_win_d2h == prim_tl_d2h_gated
+tl_win_d2h == tl_win_i
+tl_win_d2h == tl_o_int
+tl_win_d2h == tl_out
+tl_win_d2h == tl_d2h_i
+tl_win_d2h == test_tl_o
+part_access_dai == part_access_i
+direct_access_regwen_qs == direct_access_cmd_we
+direct_access_regwen_qs == direct_access_cmd_rd_wd
+direct_access_regwen_qs == direct_access_cmd_wr_wd
+direct_access_regwen_qs == check_trigger_regwen_wd
+direct_access_regwen_qs == check_trigger_we
+direct_access_regwen_qs == check_trigger_integrity_wd
+direct_access_regwen_qs == check_trigger_consistency_wd
+direct_access_regwen_qs == req_type_o
+direct_access_regwen_qs == intg_error_o
+direct_access_regwen_qs == error_det
+direct_access_regwen_qs == error_internal
+direct_access_regwen_qs == wr_attr_error
+direct_access_regwen_qs == instr_error
+direct_access_regwen_qs == wr_vld_error
+direct_access_regwen_qs == rd_vld_error
+direct_access_cmd_digest_wd == direct_access_address_we
+direct_access_cmd_digest_wd == direct_access_address_wd
+direct_access_cmd_digest_wd == direct_access_wdata_0_we
+direct_access_cmd_digest_wd == direct_access_wdata_0_wd
+direct_access_cmd_digest_wd == direct_access_wdata_1_we
+direct_access_cmd_digest_wd == direct_access_wdata_1_wd
+direct_access_cmd_digest_wd == direct_access_rdata_0_re
+direct_access_cmd_digest_wd == direct_access_rdata_0_qs
+direct_access_cmd_digest_wd == direct_access_rdata_1_re
+direct_access_cmd_digest_wd == direct_access_rdata_1_qs
+direct_access_cmd_digest_wd == check_trigger_regwen_we
+direct_access_cmd_digest_wd == check_regwen_we
+direct_access_cmd_digest_wd == check_regwen_wd
+direct_access_cmd_digest_wd == check_timeout_we
+direct_access_cmd_digest_wd == check_timeout_wd
+direct_access_cmd_digest_wd == integrity_check_period_we
+direct_access_cmd_digest_wd == integrity_check_period_wd
+direct_access_cmd_digest_wd == consistency_check_period_we
+direct_access_cmd_digest_wd == consistency_check_period_wd
+direct_access_cmd_digest_wd == vendor_test_read_lock_we
+direct_access_cmd_digest_wd == vendor_test_read_lock_wd
+direct_access_cmd_digest_wd == creator_sw_cfg_read_lock_we
+direct_access_cmd_digest_wd == creator_sw_cfg_read_lock_wd
+direct_access_cmd_digest_wd == tlul_error
+direct_access_cmd_digest_wd == intg_error_q
+direct_access_cmd_digest_wd == unused_tl_i_int
+direct_access_cmd_digest_wd == reqfifo_wvalid
+direct_access_cmd_digest_wd == reqfifo_rready
+direct_access_cmd_digest_wd == sramreqfifo_wvalid
+direct_access_cmd_digest_wd == timer_en_i
+lc_en == word_data
+gnt_i == gen_normal_case.mask_tree
+gnt_i == lc_en_out
+wdata_o == data_i
+d_ack == unused_data
+d_ack == wmask_intg
+d_ack == gen_rmask.rmask
+d_valid == d_error
+d_valid == unused_rerror
+d_valid == integ_cnt_zero
+error_instr_integ == event_intr_i
+error_instr_integ == fips_o
+error_data_integ == gen_normal_case.gen_tree[1].gen_level[0].gen_nodes.sel
+data_intg == wdata_intg
+data_intg == gen_normal_case.gen_tree[2].gen_level[0].gen_nodes.sel
+data_intg == lfsr_state
+data_intg == fsm_err_o
+woffset == gen_normal_case.idx_tree
+wdata_combined == reqfifo_rdata
+wdata_combined == ready_i
+rdata_tlword == lfsr_err
+gen_write_output[0].gen_ft_output.unused_w == edn_data_i
+gen_write_output[0].gen_ft_output.unused_w == cnsty_period_msk_i
+rspfifo_rdata == req_i
+rspfifo_rdata == hw2reg_intr_state_d_o
+tl_i_int == sramreqfifo_wdata
+data_o == gen_normal_fifo.storage
+gen_normal_case.gnt_tree == gen_normal_case.gen_tree[2].gen_level[3].gen_nodes.sel
+reg2hw_intr_test_qe_i == integ_chk_trig_d
+edn_req_o == cnsty_set_period
+cnsty_chk_trig_i == integ_cnt_set
+timeout_i == clr_integ_chk_trig
+chk_timeout_o == integ_mask
+reseed_en == cnsty_chk_req_q
+unused_seed == cnsty_cnt_pause
+cnsty_cnt_set_val == tl_h2d_o
+cnsty_mask == tl_h2d_i
+integ_set_period == integ_set_timeout
+integ_chk_trig_q == idx_state_q
+req_chk_i == gen_normal_case.unused_prio_tree
+err_o == gen_normal_case.gen_tree[3].gen_level[7].gen_nodes.sel
+gen_normal_fifo.fifo_rptr == idx_state_d
+gen_normal_fifo.fifo_rptr == enc_idx_out
+key_state_d == enc_key_out
+data_state_d == enc_data_out
+digest_state_d == enc_data_out_xor
+access_o == access_pre
+intr_otp_operation_done_o one of { "-1", "340282366920938463463374607431768211455" }
+intr_otp_error_o one of { "-1", "115792089237316195423570985008687907853269984665640564039457584007913129639935" }
+otp_obs_o one of { "-1", "0" }
+lc_escalate_en_i one of { "-1", "1" }
+lc_seed_hw_rd_en == "-1"
+lc_check_byp_en one of { "-1", "4611967493404037800" }
+lc_escalate_en_synced one of { "-1", "4611967493404040363" }
+tlul_part_sel_oh one of { "-1", "1365" }
+part_tlul_gnt one of { "-1", "21" }
+part_tlul_rvalid one of { "-1", "9" }
+part_fsm_err one of { "-1", "76929471251750273848705239152733669396455464067492991403832661799783757349583688569989482106092830086063723883749486922549573336706976304338739120746100928825705426436057757869217668698291864920494724962663677471" }
+chk_pending one of { "-1", "10" }
+integ_chk_ack one of { "-1", "11603140796640482181934107735354621288516690183869728570366104519228760058119211113841405277988778536421407799364291269405337896094424859170096043740625628757636836003848644706998690879492529217543597544426088144575303174442800751388880087259293822810833463385577328781843166096743421348121563232764743764697843480398066874398281984" }
+cnsty_chk_req one of { "-1", "8468245980088003815891821825495532090310173034801818317346864731096662640359258587573247547151725062839368065877681532158326002998569369511014551868106791" }
+lfsr_edn_req one of { "-1", "101033739191003473222579476271154853872284958806122770116538354065392859767432" }
+edn_data one of { "-1", "21674255512270216372172778503958891098521617017449217772278033365021575888256014489461322286073034613772581683819995407826803957391436472701922811988814389115584781723513868340568987771031768981740978949020309861841138338005800608392" }
+edn_ack one of { "-1", "5477049976260990844452462555705366641599183751325370442376" }
+key_edn_req one of { "-1", "46423099417978118591375198419350446110007263810945801745642414207396612837977494644316540655375179696746278853694145949219741138084188908363896320784424802578446806008183529584870695347615456989" }
+part_otp_rdata one of { "-1", "18418311526567206807" }
+otp_part_idx one of { "-1", "7" }
+part_scrmbl_mtx_req one of { "-1", "120" }
+scrmbl_mtx_idx one of { "-1", "4" }
+part_scrmbl_rsp_data one of { "-1", "18263101155347980477" }
+part_scrmbl_mtx_gnt one of { "-1", "16" }
+tl_win_d2h one of { "-1", "4611967493404033193" }
+scrmbl_req_bundle one of { "-1", "2962132529720886237153" }
+part_access_dai one of { "-1", "200166098188787331449043837052514822505" }
+direct_access_regwen_qs one of { "-1", "150" }
+direct_access_cmd_digest_wd one of { "-1", "105" }
+hw_cfg_digest_0_qs one of { "-1", "2193015709" }
+hw_cfg_digest_1_qs one of { "-1", "3749153669" }
+secret0_digest_0_qs one of { "-1", "2102496240" }
+secret0_digest_1_qs one of { "-1", "1240228061" }
+lc_en_i one of { "-1", "4294967295" }
+lc_en one of { "-1", "42" }
+gnt_i one of { "-1", "5" }
+wdata_o one of { "-1", "5326738963678989296" }
+a_ack one of { "-1", "233" }
+d_ack one of { "-1", "255" }
+sram_ack one of { "-1", "252" }
+d_valid one of { "-1", "191" }
+vld_rd_rsp one of { "-1", "215" }
+error_blanking_data one of { "-1", "95" }
+unused_instr one of { "-1", "151" }
+error_instr_integ one of { "-1", "154" }
+error_data_integ one of { "-1", "63" }
+error_blanking_integ one of { "-1", "107" }
+d_data one of { "-1", "180" }
+data_intg one of { "-1", "251" }
+woffset one of { "-1", "249" }
+wmask_combined one of { "-1", "48" }
+wdata_combined one of { "-1", "253" }
+wmask_int one of { "-1", "135" }
+wdata_int one of { "-1", "181" }
+rdata_reshaped one of { "-1", "121" }
+rdata_tlword one of { "-1", "195" }
+gen_write_output[0].gen_ft_output.unused_w one of { "-1", "58" }
+sramreqfifo_rdata one of { "-1", "83" }
+rspfifo_rdata one of { "-1", "207" }
+tl_i_int one of { "-1", "239" }
+reqfifo_wdata one of { "-1", "210" }
+rspfifo_wdata one of { "-1", "159" }
+gnt_o one of { "-1", "229" }
+idx_o one of { "-1", "189" }
+valid_o one of { "-1", "92" }
+data_o one of { "-1", "119" }
+gen_normal_case.req_tree one of { "-1", "53" }
+gen_normal_case.gnt_tree one of { "-1", "31" }
+gen_normal_case.gen_tree[0].gen_level[0].gen_nodes.sel one of { "-1", "214" }
+gen_normal_case.gen_tree[1].gen_level[1].gen_nodes.sel one of { "-1", "227" }
+gen_normal_case.gen_tree[2].gen_level[1].gen_nodes.sel one of { "-1", "118" }
+gen_normal_case.gen_tree[2].gen_level[2].gen_nodes.sel one of { "-1", "62" }
+reg2hw_intr_enable_q_i one of { "-1", "184" }
+reg2hw_intr_test_q_i one of { "-1", "248" }
+reg2hw_intr_test_qe_i one of { "-1", "130" }
+reg2hw_intr_state_q_i one of { "-1", "169" }
+hw2reg_intr_state_de_o one of { "-1", "162" }
+intr_o one of { "-1", "22" }
+new_event one of { "-1", "84" }
+edn_req_o one of { "-1", "46" }
+otp_prog_busy_i one of { "-1", "18" }
+integ_chk_trig_i one of { "-1", "137" }
+cnsty_chk_trig_i one of { "-1", "145" }
+chk_pending_o one of { "-1", "80" }
+timeout_i one of { "-1", "36" }
+integ_period_msk_i one of { "-1", "11" }
+integ_chk_req_o one of { "-1", "57" }
+cnsty_chk_req_o one of { "-1", "192" }
+integ_chk_ack_i one of { "-1", "82" }
+cnsty_chk_ack_i one of { "-1", "197" }
+escalate_en_i one of { "-1", "12" }
+chk_timeout_o one of { "-1", "99" }
+integ_cnt one of { "-1", "213" }
+cnsty_cnt one of { "-1", "54" }
+integ_cnt_err one of { "-1", "81" }
+cnsty_cnt_err one of { "-1", "182" }
+state_q one of { "-1", "37" }
+edn_ack_i one of { "-1", "164" }
+reseed_en one of { "-1", "157" }
+lfsr_en one of { "-1", "202" }
+reseed_cnt_d one of { "-1", "24" }
+reseed_cnt_q one of { "-1", "106" }
+entropy one of { "-1", "225" }
+unused_seed one of { "-1", "104" }
+integ_cnt_set_val one of { "-1", "89" }
+cnsty_cnt_set_val one of { "-1", "91" }
+cnsty_mask one of { "-1", "127" }
+integ_set_period one of { "-1", "247" }
+cnsty_set_timeout one of { "-1", "124" }
+cnsty_cnt_zero one of { "-1", "38" }
+cnsty_cnt_set one of { "-1", "125" }
+timeout_zero one of { "-1", "220" }
+cnsty_msk_zero one of { "-1", "235" }
+set_all_integ_reqs one of { "-1", "39" }
+set_all_cnsty_reqs one of { "-1", "161" }
+integ_chk_req_d one of { "-1", "175" }
+integ_chk_req_q one of { "-1", "236" }
+cnsty_chk_req_d one of { "-1", "147" }
+integ_chk_trig_q one of { "-1", "2" }
+cnsty_chk_trig_d one of { "-1", "103" }
+cnsty_chk_trig_q one of { "-1", "64" }
+state_d one of { "-1", "144" }
+chk_timeout_d one of { "-1", "94" }
+chk_timeout_q one of { "-1", "87" }
+req_chk_i one of { "-1", "156" }
+unused_req_chk one of { "-1", "211" }
+gen_normal_case.prio_tree one of { "-1", "231" }
+gen_normal_case.sel_tree one of { "-1", "223" }
+gen_normal_case.data_tree one of { "-1", "108" }
+gen_normal_case.prio_mask_d one of { "-1", "97" }
+gen_normal_case.prio_mask_q one of { "-1", "134" }
+ack_o one of { "-1", "237" }
+word_ack one of { "-1", "148" }
+word_fips one of { "-1", "112" }
+err_o one of { "-1", "6" }
+word_req one of { "-1", "141" }
+fips_d one of { "-1", "102" }
+fips_q one of { "-1", "163" }
+gen_normal_case.gen_tree[3].gen_level[6].gen_nodes.sel one of { "-1", "56" }
+gen_normal_case.gen_tree[4].gen_level[15].gen_leafs.gen_tie_off.unused_sigs one of { "-1", "187" }
+lc_en_buf one of { "-1", "101" }
+tl_d2h_error one of { "-1", "242" }
+tl_d2h_o one of { "-1", "30" }
+gen_normal_fifo.fifo_rptr one of { "-1", "3" }
+key_state_d one of { "-1", "84600985875610557637611785039786414726" }
+key_state_q one of { "-1", "114429980714100239034174537843432270572" }
+data_state_d one of { "-1", "16203251043219506942" }
+digest_state_d one of { "-1", "4465122852881891577" }
+digest_state_q one of { "-1", "15936778287608661511" }
+dec_data_out one of { "-1", "10493677844884017191" }
+dec_key_out one of { "-1", "225157000494764121541787958413938172326" }
+otp_digest_const_mux one of { "-1", "44673164092574283952150430148380433694" }
+otp_enc_key_mux one of { "-1", "155501549707994824700277730530708804747" }
+otp_dec_key_mux one of { "-1", "79342881490939533593813278354960818731" }
+otp_digest_iv_mux one of { "-1", "16915408087132840954" }
+init_locked one of { "-1", "65" }
+access_o one of { "-1", "26985" }
+gen_digest_read_lock.digest_locked one of { "-1", "20" }
+===========================================================================
+..tick():::EXIT
+otp_obs_o == intg_error
+otp_obs_o == tlul_req
+otp_obs_o == tlul_addr
+otp_obs_o == part_tlul_rerror
+otp_obs_o == dai_prog_idle
+otp_obs_o == lci_prog_idle
+otp_obs_o == part_error
+otp_obs_o == otp_operation_done
+otp_obs_o == lfsr_edn_ack
+otp_obs_o == edn_req
+otp_obs_o == part_otp_arb_req
+otp_obs_o == part_otp_arb_gnt
+otp_obs_o == otp_arb_valid
+otp_obs_o == otp_arb_idx
+otp_obs_o == part_otp_err
+otp_obs_o == otp_test_vect
+otp_obs_o == scrmbl_arb_rsp_valid
+otp_obs_o == pwr_otp_rsp_d
+otp_obs_o == rst_edn_ni
+otp_obs_o == scan_en_i
+otp_obs_o == cio_test_o
+otp_obs_o == cio_test_en_o
+otp_obs_o == lc_escalate_en_any
+otp_obs_o == tlul_gnt
+otp_obs_o == tlul_rvalid
+otp_obs_o == tlul_rerror
+otp_obs_o == tlul_rdata
+otp_obs_o == tlul_part_idx
+otp_obs_o == tlul_oob_err_d
+otp_obs_o == tlul_oob_err_q
+otp_obs_o == part_tlul_req
+otp_obs_o == part_tlul_addr
+otp_obs_o == unused_digest
+otp_obs_o == dai_req
+otp_obs_o == dai_addr
+otp_obs_o == dai_wdata
+otp_obs_o == otp_idle_d
+otp_obs_o == otp_idle_q
+otp_obs_o == part_errors_reduced
+otp_obs_o == otp_prim_valid
+otp_obs_o == otp_rsp_fifo_valid
+otp_obs_o == part_scrmbl_rsp_valid
+otp_obs_o == edn_i
+otp_obs_o == pwr_otp_o
+otp_obs_o == lc_otp_vendor_test_o
+otp_obs_o == lc_otp_program_o
+otp_obs_o == flash_otp_key_i
+otp_obs_o == otbn_otp_key_i
+otp_obs_o == otp_arb_bundle
+otp_obs_o == prim_tl_h2d_gated
+otp_obs_o == reg_we_check
+otp_obs_o == err_q
+otp_obs_o == intr_enable_we
+otp_obs_o == intr_test_we
+otp_obs_o == status_re
+otp_obs_o == status_vendor_test_error_qs
+otp_obs_o == status_creator_sw_cfg_error_qs
+otp_obs_o == status_owner_sw_cfg_error_qs
+otp_obs_o == status_hw_cfg_error_qs
+otp_obs_o == status_secret0_error_qs
+otp_obs_o == status_secret1_error_qs
+otp_obs_o == status_secret2_error_qs
+otp_obs_o == status_life_cycle_error_qs
+otp_obs_o == status_dai_error_qs
+otp_obs_o == status_lci_error_qs
+otp_obs_o == status_timeout_error_qs
+otp_obs_o == status_lfsr_fsm_error_qs
+otp_obs_o == status_scrambling_fsm_error_qs
+otp_obs_o == status_key_deriv_fsm_error_qs
+otp_obs_o == err_code_err_code_2_qs
+otp_obs_o == err_code_err_code_3_qs
+otp_obs_o == err_code_err_code_4_qs
+otp_obs_o == err_code_err_code_5_qs
+otp_obs_o == err_code_err_code_6_qs
+otp_obs_o == err_code_err_code_8_qs
+otp_obs_o == err_code_err_code_9_qs
+otp_obs_o == direct_access_regwen_re
+otp_obs_o == owner_sw_cfg_read_lock_we
+otp_obs_o == vendor_test_digest_0_qs
+otp_obs_o == vendor_test_digest_1_re
+otp_obs_o == vendor_test_digest_1_qs
+otp_obs_o == creator_sw_cfg_digest_0_re
+otp_obs_o == creator_sw_cfg_digest_0_qs
+otp_obs_o == creator_sw_cfg_digest_1_re
+otp_obs_o == creator_sw_cfg_digest_1_qs
+otp_obs_o == owner_sw_cfg_digest_0_re
+otp_obs_o == owner_sw_cfg_digest_0_qs
+otp_obs_o == owner_sw_cfg_digest_1_re
+otp_obs_o == owner_sw_cfg_digest_1_qs
+otp_obs_o == hw_cfg_digest_0_re
+otp_obs_o == hw_cfg_digest_1_re
+otp_obs_o == secret0_digest_0_re
+otp_obs_o == secret0_digest_1_re
+otp_obs_o == secret1_digest_0_re
+otp_obs_o == secret1_digest_0_qs
+otp_obs_o == secret1_digest_1_re
+otp_obs_o == secret1_digest_1_qs
+otp_obs_o == secret2_digest_0_re
+otp_obs_o == secret2_digest_0_qs
+otp_obs_o == secret2_digest_1_re
+otp_obs_o == secret2_digest_1_qs
+otp_obs_o == intr_test_qe
+otp_obs_o == intr_test_flds_we
+otp_obs_o == alert_test_qe
+otp_obs_o == alert_test_flds_we
+otp_obs_o == direct_access_cmd_qe
+otp_obs_o == direct_access_cmd_flds_we
+otp_obs_o == integrity_check_period_gated_we
+otp_obs_o == consistency_check_period_gated_we
+otp_obs_o == vendor_test_read_lock_gated_we
+otp_obs_o == creator_sw_cfg_read_lock_gated_we
+otp_obs_o == owner_sw_cfg_read_lock_gated_we
+otp_obs_o == req_o
+otp_obs_o == we_o
+otp_obs_o == addr_o
+otp_obs_o == reqfifo_wready
+otp_obs_o == reqfifo_rvalid
+otp_obs_o == sramreqfifo_wready
+otp_obs_o == rspfifo_wready
+otp_obs_o == rspfifo_wvalid
+otp_obs_o == rspfifo_rready
+otp_obs_o == gen_normal_case.gen_no_dataport.unused_data
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[11].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[12].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[13].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == gen_normal_case.gen_tree[4].gen_level[14].gen_leafs.gen_tie_off.unused_sigs
+otp_obs_o == pwr_seq_o
+otp_obs_o == test_ctrl_i
+otp_obs_o == test_status_o
+otp_obs_o == test_vect_o
+otp_obs_o == valid_i
+otp_obs_o == size_i
+otp_obs_o == cmd_i
+otp_obs_o == addr_i
+otp_obs_o == wdata_i
+otp_obs_o == test_tl_i
+otp_obs_o == clr_i
+otp_obs_o == wvalid_i
+otp_obs_o == full_o
+otp_obs_o == gen_normal_fifo.fifo_wptr
+otp_obs_o == gen_normal_fifo.fifo_incr_wptr
+otp_obs_o == gen_normal_fifo.full
+otp_obs_o == gen_normal_fifo.wptr_msb
+otp_obs_o == gen_normal_fifo.wptr_value
+otp_obs_o == mode_i
+otp_obs_o == sel_i
+otp_obs_o == cnt_err
+otp_obs_o == digest_init
+otp_obs_o == data_state_sel
+otp_obs_o == digest_state_en
+otp_obs_o == valid_d
+otp_obs_o == valid_q
+otp_obs_o == init_done_o
+otp_obs_o == error_o
+otp_obs_o == dai_addr_i
+otp_obs_o == dai_req_i
+otp_obs_o == dai_wdata_i
+otp_obs_o == dai_idle_o
+otp_obs_o == dai_rdata_o
+otp_obs_o == otp_req_o
+otp_obs_o == otp_wdata_o
+otp_obs_o == otp_addr_o
+otp_obs_o == otp_rvalid_i
+otp_obs_o == otp_err_i
+otp_obs_o == scrmbl_mtx_req_o
+otp_obs_o == scrmbl_mtx_gnt_i
+otp_obs_o == scrmbl_mode_o
+otp_obs_o == scrmbl_sel_o
+otp_obs_o == scrmbl_data_o
+otp_obs_o == scrmbl_valid_o
+otp_obs_o == scrmbl_ready_i
+otp_obs_o == scrmbl_valid_i
+otp_obs_o == part_idx
+otp_obs_o == dai_prog_idle_o
+otp_obs_o == dai_cmd_done_o
+otp_obs_o == otp_gnt_i
+otp_obs_o == error_d
+otp_obs_o == error_q
+otp_obs_o == data_en
+otp_obs_o == data_sel
+otp_obs_o == data_q
+otp_obs_o == addr_base
+otp_obs_o == addr_calc
+otp_obs_o == lci_en_i
+otp_obs_o == lc_ack_o
+otp_obs_o == lc_err_o
+otp_obs_o == lci_prog_idle_o
+otp_obs_o == lc_req_i
+otp_obs_o == kdi_en_i
+otp_obs_o == scrmbl_key_seed_valid_i
+otp_obs_o == gnt
+otp_obs_o == req_valid
+otp_obs_o == seed_cnt_err
+otp_obs_o == entropy_cnt_err
+otp_obs_o == seed_cnt
+otp_obs_o == entropy_cnt
+otp_obs_o == req
+otp_obs_o == req_ready
+otp_obs_o == seed_cnt_clr
+otp_obs_o == seed_cnt_en
+otp_obs_o == entropy_cnt_clr
+otp_obs_o == entropy_cnt_en
+otp_obs_o == seed_valid_reg_en
+otp_obs_o == key_reg_en
+otp_obs_o == nonce_reg_en
+otp_obs_o == seed_valid_d
+otp_obs_o == seed_valid_q
+otp_obs_o == edn_req_d
+otp_obs_o == edn_req_q
+otp_obs_o == alert_test_i
+otp_obs_o == alert_req_i
+otp_obs_o == alert_state_o
+otp_obs_o == ping_sigint
+otp_obs_o == ping_event
+otp_obs_o == ack_sigint
+otp_obs_o == ack_level
+otp_obs_o == alert_pq
+otp_obs_o == alert_set_q
+otp_obs_o == ping_set_q
+otp_obs_o == alert_ack_o
+otp_obs_o == ping_p
+otp_obs_o == ack_p
+otp_obs_o == alert_pd
+otp_obs_o == sigint_detected
+otp_obs_o == alert_set_d
+otp_obs_o == alert_clr
+otp_obs_o == alert_test_set_d
+otp_obs_o == alert_test_set_q
+otp_obs_o == ping_set_d
+otp_obs_o == ping_clr
+otp_obs_o == alert_req_trigger
+otp_obs_o == alert_test_trigger
+otp_obs_o == ping_trigger
+otp_obs_o == alert_req
+otp_obs_o == alert_trigger
+otp_obs_o == digest_o
+otp_obs_o == tlul_req_i
+otp_obs_o == tlul_gnt_o
+otp_obs_o == tlul_addr_i
+otp_obs_o == tlul_rerror_o
+otp_obs_o == tlul_rvalid_o
+otp_obs_o == tlul_rdata_o
+otp_obs_o == ecc_err
+otp_obs_o == otp_addr_sel
+otp_obs_o == digest_reg_en
+otp_obs_o == tlul_addr_d
+otp_obs_o == tlul_addr_q
+otp_obs_o == pending_tlul_error_d
+otp_obs_o == pending_tlul_error_q
+otp_obs_o == gen_unused.unused_bits
+otp_obs_o == integ_chk_ack_o
+otp_obs_o == cnsty_chk_ack_o
+otp_obs_o == integ_chk_req_i
+otp_obs_o == cnsty_chk_req_i
+otp_obs_o == base_sel
+otp_obs_o == buffer_reg_en
+lc_seed_hw_rd_en_i == lc_dft_en_i
+lc_seed_hw_rd_en_i == lc_check_byp_en_i
+lc_seed_hw_rd_en_i == lc_creator_seed_sw_rw_en
+lc_seed_hw_rd_en_i == scrmbl_cmd_o
+lc_seed_hw_rd_en_i == check_byp_en_i
+lc_escalate_en_i == test_tokens_valid
+lc_escalate_en_i == gen_no_flops.unused_logic
+otp_ext_voltage_h_io == tl_win_h2d
+otp_ext_voltage_h_io == reg2hw
+otp_ext_voltage_h_io == intr_state_otp_operation_done_wd
+otp_ext_voltage_h_io == intr_state_otp_error_wd
+otp_ext_voltage_h_io == intr_enable_otp_error_wd
+otp_ext_voltage_h_io == intr_test_otp_operation_done_wd
+otp_ext_voltage_h_io == intr_test_otp_error_wd
+otp_ext_voltage_h_io == alert_test_fatal_check_error_wd
+otp_ext_voltage_h_io == alert_test_fatal_bus_integ_error_wd
+otp_ext_voltage_h_io == owner_sw_cfg_read_lock_wd
+otp_ext_voltage_h_io == unused_wdata
+otp_ext_voltage_h_io == tl_i
+otp_ext_voltage_h_io == tl_win_o
+otp_ext_voltage_h_io == tl_reg_h2d
+otp_ext_voltage_h_io == tl_h2d_error
+otp_ext_voltage_h_io == ext_voltage_io
+otp_ext_voltage_h_io == orig(otp_obs_o)
+otp_ext_voltage_h_io == orig(lc_seed_hw_rd_en_i)
+otp_ext_voltage_h_io == orig(lc_dft_en_i)
+otp_ext_voltage_h_io == orig(lc_check_byp_en_i)
+otp_ext_voltage_h_io == orig(otp_ext_voltage_h_io)
+otp_ext_voltage_h_io == orig(intg_error)
+otp_ext_voltage_h_io == orig(lc_creator_seed_sw_rw_en)
+otp_ext_voltage_h_io == orig(tlul_req)
+otp_ext_voltage_h_io == orig(tlul_addr)
+otp_ext_voltage_h_io == orig(part_tlul_rerror)
+otp_ext_voltage_h_io == orig(dai_prog_idle)
+otp_ext_voltage_h_io == orig(lci_prog_idle)
+otp_ext_voltage_h_io == orig(part_error)
+otp_ext_voltage_h_io == orig(otp_operation_done)
+otp_ext_voltage_h_io == orig(cnsty_chk_ack)
+otp_ext_voltage_h_io == orig(lfsr_edn_ack)
+otp_ext_voltage_h_io == orig(edn_req)
+otp_ext_voltage_h_io == orig(part_otp_arb_req)
+otp_ext_voltage_h_io == orig(part_otp_arb_gnt)
+otp_ext_voltage_h_io == orig(otp_arb_valid)
+otp_ext_voltage_h_io == orig(otp_prim_ready)
+otp_ext_voltage_h_io == orig(otp_arb_idx)
+otp_ext_voltage_h_io == orig(part_otp_err)
+otp_ext_voltage_h_io == orig(otp_rvalid)
+otp_ext_voltage_h_io == orig(otp_test_vect)
+otp_ext_voltage_h_io == orig(scrmbl_arb_req_ready)
+otp_ext_voltage_h_io == orig(scrmbl_arb_rsp_valid)
+otp_ext_voltage_h_io == orig(pwr_otp_rsp_d)
+otp_ext_voltage_h_io == orig(rst_edn_ni)
+otp_ext_voltage_h_io == orig(scan_en_i)
+otp_ext_voltage_h_io == orig(scan_rst_ni)
+otp_ext_voltage_h_io == orig(scanmode_i)
+otp_ext_voltage_h_io == orig(cio_test_o)
+otp_ext_voltage_h_io == orig(cio_test_en_o)
+otp_ext_voltage_h_io == orig(lc_escalate_en)
+otp_ext_voltage_h_io == orig(lc_escalate_en_any)
+otp_ext_voltage_h_io == orig(tlul_gnt)
+otp_ext_voltage_h_io == orig(tlul_rvalid)
+otp_ext_voltage_h_io == orig(tlul_rerror)
+otp_ext_voltage_h_io == orig(tlul_rdata)
+otp_ext_voltage_h_io == orig(tlul_part_idx)
+otp_ext_voltage_h_io == orig(tlul_oob_err_d)
+otp_ext_voltage_h_io == orig(tlul_oob_err_q)
+otp_ext_voltage_h_io == orig(part_tlul_req)
+otp_ext_voltage_h_io == orig(part_tlul_addr)
+otp_ext_voltage_h_io == orig(unused_digest)
+otp_ext_voltage_h_io == orig(dai_req)
+otp_ext_voltage_h_io == orig(dai_cmd)
+otp_ext_voltage_h_io == orig(dai_addr)
+otp_ext_voltage_h_io == orig(dai_wdata)
+otp_ext_voltage_h_io == orig(otp_idle_d)
+otp_ext_voltage_h_io == orig(otp_idle_q)
+otp_ext_voltage_h_io == orig(part_errors_reduced)
+otp_ext_voltage_h_io == orig(otp_arb_ready)
+otp_ext_voltage_h_io == orig(otp_prim_valid)
+otp_ext_voltage_h_io == orig(otp_rsp_fifo_valid)
+otp_ext_voltage_h_io == orig(part_otp_rvalid)
+otp_ext_voltage_h_io == orig(part_scrmbl_req_ready)
+otp_ext_voltage_h_io == orig(part_scrmbl_rsp_valid)
+otp_ext_voltage_h_io == orig(gen_partitions[0].gen_unbuffered.unused_part_scrmbl_sigs)
+otp_ext_voltage_h_io == orig(edn_i)
+otp_ext_voltage_h_io == orig(core_tl_o)
+otp_ext_voltage_h_io == orig(prim_tl_o)
+otp_ext_voltage_h_io == orig(otp_ast_pwr_seq_h_i)
+otp_ext_voltage_h_io == orig(otp_alert_o)
+otp_ext_voltage_h_io == orig(pwr_otp_o)
+otp_ext_voltage_h_io == orig(lc_otp_vendor_test_o)
+otp_ext_voltage_h_io == orig(lc_otp_program_o)
+otp_ext_voltage_h_io == orig(flash_otp_key_i)
+otp_ext_voltage_h_io == orig(otbn_otp_key_i)
+otp_ext_voltage_h_io == orig(otbn_otp_key_o)
+otp_ext_voltage_h_io == orig(tl_win_h2d)
+otp_ext_voltage_h_io == orig(reg2hw)
+otp_ext_voltage_h_io == orig(part_access)
+otp_ext_voltage_h_io == orig(otp_arb_bundle)
+otp_ext_voltage_h_io == orig(prim_tl_h2d_gated)
+otp_ext_voltage_h_io == orig(obs_ctrl_i)
+otp_ext_voltage_h_io == orig(part_access_pre)
+otp_ext_voltage_h_io == orig(devmode_i)
+otp_ext_voltage_h_io == orig(reg_we_check)
+otp_ext_voltage_h_io == orig(err_q)
+otp_ext_voltage_h_io == orig(intr_state_otp_operation_done_wd)
+otp_ext_voltage_h_io == orig(intr_state_otp_error_wd)
+otp_ext_voltage_h_io == orig(intr_enable_we)
+otp_ext_voltage_h_io == orig(intr_enable_otp_error_wd)
+otp_ext_voltage_h_io == orig(intr_test_we)
+otp_ext_voltage_h_io == orig(intr_test_otp_operation_done_wd)
+otp_ext_voltage_h_io == orig(intr_test_otp_error_wd)
+otp_ext_voltage_h_io == orig(alert_test_fatal_check_error_wd)
+otp_ext_voltage_h_io == orig(alert_test_fatal_bus_integ_error_wd)
+otp_ext_voltage_h_io == orig(status_re)
+otp_ext_voltage_h_io == orig(status_vendor_test_error_qs)
+otp_ext_voltage_h_io == orig(status_creator_sw_cfg_error_qs)
+otp_ext_voltage_h_io == orig(status_owner_sw_cfg_error_qs)
+otp_ext_voltage_h_io == orig(status_hw_cfg_error_qs)
+otp_ext_voltage_h_io == orig(status_secret0_error_qs)
+otp_ext_voltage_h_io == orig(status_secret1_error_qs)
+otp_ext_voltage_h_io == orig(status_secret2_error_qs)
+otp_ext_voltage_h_io == orig(status_life_cycle_error_qs)
+otp_ext_voltage_h_io == orig(status_dai_error_qs)
+otp_ext_voltage_h_io == orig(status_lci_error_qs)
+otp_ext_voltage_h_io == orig(status_timeout_error_qs)
+otp_ext_voltage_h_io == orig(status_lfsr_fsm_error_qs)
+otp_ext_voltage_h_io == orig(status_scrambling_fsm_error_qs)
+otp_ext_voltage_h_io == orig(status_key_deriv_fsm_error_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_2_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_3_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_4_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_5_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_6_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_8_qs)
+otp_ext_voltage_h_io == orig(err_code_err_code_9_qs)
+otp_ext_voltage_h_io == orig(direct_access_regwen_re)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_read_lock_we)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_read_lock_wd)
+otp_ext_voltage_h_io == orig(vendor_test_digest_0_qs)
+otp_ext_voltage_h_io == orig(vendor_test_digest_1_re)
+otp_ext_voltage_h_io == orig(vendor_test_digest_1_qs)
+otp_ext_voltage_h_io == orig(creator_sw_cfg_digest_0_re)
+otp_ext_voltage_h_io == orig(creator_sw_cfg_digest_0_qs)
+otp_ext_voltage_h_io == orig(creator_sw_cfg_digest_1_re)
+otp_ext_voltage_h_io == orig(creator_sw_cfg_digest_1_qs)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_digest_0_re)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_digest_0_qs)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_digest_1_re)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_digest_1_qs)
+otp_ext_voltage_h_io == orig(hw_cfg_digest_0_re)
+otp_ext_voltage_h_io == orig(hw_cfg_digest_1_re)
+otp_ext_voltage_h_io == orig(secret0_digest_0_re)
+otp_ext_voltage_h_io == orig(secret0_digest_1_re)
+otp_ext_voltage_h_io == orig(secret1_digest_0_re)
+otp_ext_voltage_h_io == orig(secret1_digest_0_qs)
+otp_ext_voltage_h_io == orig(secret1_digest_1_re)
+otp_ext_voltage_h_io == orig(secret1_digest_1_qs)
+otp_ext_voltage_h_io == orig(secret2_digest_0_re)
+otp_ext_voltage_h_io == orig(secret2_digest_0_qs)
+otp_ext_voltage_h_io == orig(secret2_digest_1_re)
+otp_ext_voltage_h_io == orig(secret2_digest_1_qs)
+otp_ext_voltage_h_io == orig(intr_test_qe)
+otp_ext_voltage_h_io == orig(intr_test_flds_we)
+otp_ext_voltage_h_io == orig(alert_test_qe)
+otp_ext_voltage_h_io == orig(alert_test_flds_we)
+otp_ext_voltage_h_io == orig(direct_access_cmd_qe)
+otp_ext_voltage_h_io == orig(direct_access_cmd_flds_we)
+otp_ext_voltage_h_io == orig(integrity_check_period_gated_we)
+otp_ext_voltage_h_io == orig(consistency_check_period_gated_we)
+otp_ext_voltage_h_io == orig(vendor_test_read_lock_gated_we)
+otp_ext_voltage_h_io == orig(creator_sw_cfg_read_lock_gated_we)
+otp_ext_voltage_h_io == orig(owner_sw_cfg_read_lock_gated_we)
+otp_ext_voltage_h_io == orig(unused_wdata)
+otp_ext_voltage_h_io == orig(tl_i)
+otp_ext_voltage_h_io == orig(tl_reg_d2h)
+otp_ext_voltage_h_io == orig(tl_o_pre)
+otp_ext_voltage_h_io == orig(tl_win_o)
+otp_ext_voltage_h_io == orig(tl_reg_h2d)
+otp_ext_voltage_h_io == orig(lc_en_o)
+otp_ext_voltage_h_io == orig(gen_buffs[0].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[3].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[6].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[7].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[8].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[9].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[10].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[11].lc_en_out)
+otp_ext_voltage_h_io == orig(gen_buffs[12].lc_en_out)
+otp_ext_voltage_h_io == orig(en_ifetch_i)
+otp_ext_voltage_h_io == orig(req_o)
+otp_ext_voltage_h_io == orig(we_o)
+otp_ext_voltage_h_io == orig(addr_o)
+otp_ext_voltage_h_io == orig(reqfifo_wready)
+otp_ext_voltage_h_io == orig(reqfifo_rvalid)
+otp_ext_voltage_h_io == orig(sramreqfifo_wready)
+otp_ext_voltage_h_io == orig(rspfifo_wready)
+otp_ext_voltage_h_io == orig(rspfifo_wvalid)
+otp_ext_voltage_h_io == orig(rspfifo_rready)
+otp_ext_voltage_h_io == orig(gen_normal_case.gen_no_dataport.unused_data)
+otp_ext_voltage_h_io == orig(gen_normal_case.gen_tree[4].gen_level[11].gen_leafs.gen_tie_off.unused_sigs)
+otp_ext_voltage_h_io == orig(gen_normal_case.gen_tree[4].gen_level[12].gen_leafs.gen_tie_off.unused_sigs)
+otp_ext_voltage_h_io == orig(gen_normal_case.gen_tree[4].gen_level[13].gen_leafs.gen_tie_off.unused_sigs)
+otp_ext_voltage_h_io == orig(gen_normal_case.gen_tree[4].gen_level[14].gen_leafs.gen_tie_off.unused_sigs)
+otp_ext_voltage_h_io == orig(tl_h2d_error)
+otp_ext_voltage_h_io == orig(pwr_seq_o)
+otp_ext_voltage_h_io == orig(pwr_seq_h_i)
+otp_ext_voltage_h_io == orig(ext_voltage_io)
+otp_ext_voltage_h_io == orig(test_ctrl_i)
+otp_ext_voltage_h_io == orig(test_status_o)
+otp_ext_voltage_h_io == orig(test_vect_o)
+otp_ext_voltage_h_io == orig(ready_o)
+otp_ext_voltage_h_io == orig(valid_i)
+otp_ext_voltage_h_io == orig(size_i)
+otp_ext_voltage_h_io == orig(cmd_i)
+otp_ext_voltage_h_io == orig(addr_i)
+otp_ext_voltage_h_io == orig(wdata_i)
+otp_ext_voltage_h_io == orig(test_tl_i)
+otp_ext_voltage_h_io == orig(otp_alert_src_o)
+otp_ext_voltage_h_io == orig(clr_i)
+otp_ext_voltage_h_io == orig(wvalid_i)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.empty)
+otp_ext_voltage_h_io == orig(rready_i)
+otp_ext_voltage_h_io == orig(full_o)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.fifo_wptr)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.fifo_incr_wptr)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.fifo_incr_rptr)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.fifo_empty)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.under_rst)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.full)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.wptr_msb)
+otp_ext_voltage_h_io == orig(gen_normal_fifo.wptr_value)
+otp_ext_voltage_h_io == orig(mode_i)
+otp_ext_voltage_h_io == orig(sel_i)
+otp_ext_voltage_h_io == orig(cnt_err)
+otp_ext_voltage_h_io == orig(digest_init)
+otp_ext_voltage_h_io == orig(data_state_sel)
+otp_ext_voltage_h_io == orig(digest_state_en)
+otp_ext_voltage_h_io == orig(cnt_clr)
+otp_ext_voltage_h_io == orig(valid_d)
+otp_ext_voltage_h_io == orig(valid_q)
+otp_ext_voltage_h_io == orig(init_done_o)
+otp_ext_voltage_h_io == orig(error_o)
+otp_ext_voltage_h_io == orig(dai_addr_i)
+otp_ext_voltage_h_io == orig(dai_cmd_i)
+otp_ext_voltage_h_io == orig(dai_req_i)
+otp_ext_voltage_h_io == orig(dai_wdata_i)
+otp_ext_voltage_h_io == orig(dai_idle_o)
+otp_ext_voltage_h_io == orig(dai_rdata_o)
+otp_ext_voltage_h_io == orig(otp_req_o)
+otp_ext_voltage_h_io == orig(otp_cmd_o)
+otp_ext_voltage_h_io == orig(otp_size_o)
+otp_ext_voltage_h_io == orig(otp_wdata_o)
+otp_ext_voltage_h_io == orig(otp_addr_o)
+otp_ext_voltage_h_io == orig(otp_rvalid_i)
+otp_ext_voltage_h_io == orig(otp_err_i)
+otp_ext_voltage_h_io == orig(scrmbl_mtx_req_o)
+otp_ext_voltage_h_io == orig(scrmbl_mtx_gnt_i)
+otp_ext_voltage_h_io == orig(scrmbl_cmd_o)
+otp_ext_voltage_h_io == orig(scrmbl_mode_o)
+otp_ext_voltage_h_io == orig(scrmbl_sel_o)
+otp_ext_voltage_h_io == orig(scrmbl_data_o)
+otp_ext_voltage_h_io == orig(scrmbl_valid_o)
+otp_ext_voltage_h_io == orig(scrmbl_ready_i)
+otp_ext_voltage_h_io == orig(scrmbl_valid_i)
+otp_ext_voltage_h_io == orig(part_idx)
+otp_ext_voltage_h_io == orig(part_sel_oh)
+otp_ext_voltage_h_io == orig(dai_prog_idle_o)
+otp_ext_voltage_h_io == orig(dai_cmd_done_o)
+otp_ext_voltage_h_io == orig(otp_gnt_i)
+otp_ext_voltage_h_io == orig(error_d)
+otp_ext_voltage_h_io == orig(error_q)
+otp_ext_voltage_h_io == orig(data_en)
+otp_ext_voltage_h_io == orig(data_clr)
+otp_ext_voltage_h_io == orig(data_sel)
+otp_ext_voltage_h_io == orig(base_sel_d)
+otp_ext_voltage_h_io == orig(base_sel_q)
+otp_ext_voltage_h_io == orig(data_q)
+otp_ext_voltage_h_io == orig(digest_addr_lut)
+otp_ext_voltage_h_io == orig(addr_base)
+otp_ext_voltage_h_io == orig(addr_calc)
+otp_ext_voltage_h_io == orig(lci_en_i)
+otp_ext_voltage_h_io == orig(lc_ack_o)
+otp_ext_voltage_h_io == orig(lc_err_o)
+otp_ext_voltage_h_io == orig(lci_prog_idle_o)
+otp_ext_voltage_h_io == orig(lc_req_i)
+otp_ext_voltage_h_io == orig(unused_rdata)
+otp_ext_voltage_h_io == orig(Info)
+otp_ext_voltage_h_io == orig(PartInfoDefault)
+otp_ext_voltage_h_io == orig(kdi_en_i)
+otp_ext_voltage_h_io == orig(scrmbl_key_seed_valid_i)
+otp_ext_voltage_h_io == orig(sram_data_key_seed_i)
+otp_ext_voltage_h_io == orig(gnt)
+otp_ext_voltage_h_io == orig(req_valid)
+otp_ext_voltage_h_io == orig(seed_cnt_err)
+otp_ext_voltage_h_io == orig(entropy_cnt_err)
+otp_ext_voltage_h_io == orig(seed_cnt)
+otp_ext_voltage_h_io == orig(entropy_cnt)
+otp_ext_voltage_h_io == orig(key_out_q)
+otp_ext_voltage_h_io == orig(req)
+otp_ext_voltage_h_io == orig(req_ready)
+otp_ext_voltage_h_io == orig(seed_cnt_clr)
+otp_ext_voltage_h_io == orig(seed_cnt_en)
+otp_ext_voltage_h_io == orig(entropy_cnt_clr)
+otp_ext_voltage_h_io == orig(entropy_cnt_en)
+otp_ext_voltage_h_io == orig(seed_valid_reg_en)
+otp_ext_voltage_h_io == orig(key_reg_en)
+otp_ext_voltage_h_io == orig(nonce_reg_en)
+otp_ext_voltage_h_io == orig(seed_valid_d)
+otp_ext_voltage_h_io == orig(seed_valid_q)
+otp_ext_voltage_h_io == orig(key_out_d)
+otp_ext_voltage_h_io == orig(nonce_out_d)
+otp_ext_voltage_h_io == orig(nonce_out_q)
+otp_ext_voltage_h_io == orig(edn_req_d)
+otp_ext_voltage_h_io == orig(edn_req_q)
+otp_ext_voltage_h_io == orig(mubi_i)
+otp_ext_voltage_h_io == orig(mubi_o)
+otp_ext_voltage_h_io == orig(mubi)
+otp_ext_voltage_h_io == orig(mubi_int)
+otp_ext_voltage_h_io == orig(mubi_out)
+otp_ext_voltage_h_io == orig(alert_test_i)
+otp_ext_voltage_h_io == orig(alert_req_i)
+otp_ext_voltage_h_io == orig(alert_state_o)
+otp_ext_voltage_h_io == orig(ping_sigint)
+otp_ext_voltage_h_io == orig(ping_event)
+otp_ext_voltage_h_io == orig(ack_sigint)
+otp_ext_voltage_h_io == orig(ack_level)
+otp_ext_voltage_h_io == orig(alert_pq)
+otp_ext_voltage_h_io == orig(alert_set_q)
+otp_ext_voltage_h_io == orig(ping_set_q)
+otp_ext_voltage_h_io == orig(alert_ack_o)
+otp_ext_voltage_h_io == orig(ping_n)
+otp_ext_voltage_h_io == orig(ping_p)
+otp_ext_voltage_h_io == orig(ack_p)
+otp_ext_voltage_h_io == orig(alert_pd)
+otp_ext_voltage_h_io == orig(sigint_detected)
+otp_ext_voltage_h_io == orig(alert_set_d)
+otp_ext_voltage_h_io == orig(alert_clr)
+otp_ext_voltage_h_io == orig(alert_test_set_d)
+otp_ext_voltage_h_io == orig(alert_test_set_q)
+otp_ext_voltage_h_io == orig(ping_set_d)
+otp_ext_voltage_h_io == orig(ping_clr)
+otp_ext_voltage_h_io == orig(alert_req_trigger)
+otp_ext_voltage_h_io == orig(alert_test_trigger)
+otp_ext_voltage_h_io == orig(ping_trigger)
+otp_ext_voltage_h_io == orig(alert_req)
+otp_ext_voltage_h_io == orig(alert_trigger)
+otp_ext_voltage_h_io == orig(digest_o)
+otp_ext_voltage_h_io == orig(tlul_req_i)
+otp_ext_voltage_h_io == orig(tlul_gnt_o)
+otp_ext_voltage_h_io == orig(tlul_addr_i)
+otp_ext_voltage_h_io == orig(tlul_rerror_o)
+otp_ext_voltage_h_io == orig(tlul_rvalid_o)
+otp_ext_voltage_h_io == orig(tlul_rdata_o)
+otp_ext_voltage_h_io == orig(ecc_err)
+otp_ext_voltage_h_io == orig(otp_addr_sel)
+otp_ext_voltage_h_io == orig(digest_reg_en)
+otp_ext_voltage_h_io == orig(tlul_addr_d)
+otp_ext_voltage_h_io == orig(tlul_addr_q)
+otp_ext_voltage_h_io == orig(pending_tlul_error_d)
+otp_ext_voltage_h_io == orig(pending_tlul_error_q)
+otp_ext_voltage_h_io == orig(gen_unused.unused_bits)
+otp_ext_voltage_h_io == orig(gen_digest_write_lock.digest_locked)
+otp_ext_voltage_h_io == orig(access_i)
+otp_ext_voltage_h_io == orig(integ_chk_ack_o)
+otp_ext_voltage_h_io == orig(cnsty_chk_ack_o)
+otp_ext_voltage_h_io == orig(check_byp_en_i)
+otp_ext_voltage_h_io == orig(dout_locked_q)
+otp_ext_voltage_h_io == orig(integ_chk_req_i)
+otp_ext_voltage_h_io == orig(cnsty_chk_req_i)
+otp_ext_voltage_h_io == orig(base_sel)
+otp_ext_voltage_h_io == orig(dout_locked_d)
+otp_ext_voltage_h_io == orig(buffer_reg_en)
+lc_seed_hw_rd_en == rma_token_valid
+lc_seed_hw_rd_en == secrets_valid
+dai_idle == dai_rdata
+dai_idle == otp_rsp_fifo_ready
+dai_idle == otp_rvalid
+dai_idle == otp_fifo_valid
+dai_idle == scrmbl_mtx_valid
+dai_idle == part_init_req
+dai_idle == pwr_otp_req_synced
+dai_idle == rst_ni
+dai_idle == otp_arb_ready
+dai_idle == pwr_otp_i
+dai_idle == sram_otp_key_i
+dai_idle == err_code_err_code_7_qs
+dai_idle == wmask_o
+dai_idle == rvalid_i
+dai_idle == rspfifo_rvalid
+dai_idle == sramreqfifo_rready
+dai_idle == wready_o
+dai_idle == rvalid_o
+dai_idle == depth_o
+dai_idle == rready_i
+dai_idle == gen_normal_fifo.fifo_incr_rptr
+dai_idle == gen_normal_fifo.rptr_msb
+dai_idle == gen_normal_fifo.rptr_value
+dai_idle == data_state_en
+dai_idle == key_state_en
+dai_idle == digest_mode_d
+dai_idle == digest_mode_q
+dai_idle == cnt_en
+dai_idle == d_i
+dai_idle == q_o
+dai_idle == intq
+dai_idle == d_o
+dai_idle == part_init_req_o
+dai_idle == init_req_i
+dai_idle == unused_rdata
+chk_pending == chk_timeout
+chk_pending == lfsr_fsm_err
+chk_pending == scrmbl_fsm_err
+chk_pending == integ_chk_req
+chk_pending == reg_we
+chk_pending == reg_re
+chk_pending == intr_state_otp_operation_done_qs
+chk_pending == intr_state_otp_error_qs
+chk_pending == intr_enable_otp_operation_done_qs
+chk_pending == intr_enable_otp_error_qs
+chk_pending == direct_access_address_qs
+chk_pending == direct_access_wdata_0_qs
+chk_pending == direct_access_wdata_1_qs
+chk_pending == check_timeout_qs
+chk_pending == integrity_check_period_qs
+chk_pending == consistency_check_period_qs
+chk_pending == intg_err_o
+chk_pending == reg_error
+chk_pending == addrmiss
+chk_pending == wr_err
+chk_pending == reg_busy
+chk_pending == intg_err
+chk_pending == reg_we_err
+cnsty_chk_ack == dai_cmd
+cnsty_chk_ack == dai_cmd_i
+key_edn_ack == otp_error
+key_edn_ack == fatal_macro_error_d
+key_edn_ack == fatal_macro_error_q
+key_edn_ack == fatal_check_error_d
+key_edn_ack == fatal_check_error_q
+key_edn_ack == fatal_bus_integ_error_d
+key_edn_ack == fatal_bus_integ_error_q
+key_edn_ack == interrupt_triggers_d
+key_edn_ack == interrupt_triggers_q
+key_edn_ack == alerts
+key_edn_ack == alert_test
+key_edn_ack == integ_chk_trig
+key_edn_ack == cnsty_chk_trig
+key_edn_ack == pwr_otp_rsp_q
+key_edn_ack == unused_lci_scrmbl_sigs
+key_edn_ack == scrmbl_key_seed_valid
+key_edn_ack == unused_kdi_otp_sigs
+key_edn_ack == gen_partitions[1].gen_unbuffered.unused_part_scrmbl_sigs
+key_edn_ack == gen_partitions[2].gen_unbuffered.unused_part_scrmbl_sigs
+key_edn_ack == gen_partitions[3].gen_buffered.unused_part_tlul_sigs
+key_edn_ack == gen_partitions[4].gen_buffered.unused_part_tlul_sigs
+key_edn_ack == gen_partitions[5].gen_buffered.unused_part_tlul_sigs
+key_edn_ack == gen_partitions[6].gen_buffered.unused_part_tlul_sigs
+key_edn_ack == gen_partitions[7].gen_lifecycle.unused_part_tlul_sigs
+key_edn_ack == gen_partitions[7].gen_lifecycle.unused_part_scrmbl_sigs
+key_edn_ack == edn_o
+key_edn_ack == otp_ast_pwr_seq_o
+key_edn_ack == lc_otp_vendor_test_i
+key_edn_ack == intr_state_we
+key_edn_ack == alert_test_we
+key_edn_ack == status_bus_integ_error_qs
+key_edn_ack == status_dai_idle_qs
+key_edn_ack == status_check_pending_qs
+key_edn_ack == err_code_re
+key_edn_ack == err_code_err_code_0_qs
+key_edn_ack == err_code_err_code_1_qs
+key_edn_ack == vendor_test_digest_0_re
+key_edn_ack == direct_access_cmd_gated_we
+key_edn_ack == direct_access_address_gated_we
+key_edn_ack == direct_access_wdata_0_gated_we
+key_edn_ack == direct_access_wdata_1_gated_we
+key_edn_ack == check_trigger_qe
+key_edn_ack == check_trigger_flds_we
+key_edn_ack == check_trigger_gated_we
+key_edn_ack == check_timeout_gated_we
+otp_prim_ready == gen_normal_case.gen_tree[3].gen_level[0].gen_nodes.sel
+otp_prim_ready == gen_normal_case.gen_tree[3].gen_level[1].gen_nodes.sel
+otp_prim_ready == gen_normal_case.gen_tree[3].gen_level[2].gen_nodes.sel
+otp_prim_ready == gen_normal_case.gen_tree[3].gen_level[3].gen_nodes.sel
+otp_prim_ready == gen_normal_case.gen_tree[3].gen_level[4].gen_nodes.sel
+otp_prim_ready == ready_o
+otp_prim_ready == key_state_sel
+otp_prim_ready == alert_nq
+otp_prim_ready == ack_n
+otp_prim_ready == alert_nd
+part_otp_rdata == rdata_o
+part_otp_rdata == otp_rdata_i
+part_otp_rdata == data_mux
+otp_part_idx == part_init_done
+otp_part_idx == part_init_done_i
+scrmbl_mtx_idx == rdata_i
+scrmbl_mtx_idx == clr_cnsty_chk_trig
+part_scrmbl_rsp_data == rerror_i
+part_scrmbl_rsp_data == data_state_q
+part_scrmbl_rsp_data == scrmbl_data_i
+scrmbl_arb_req_ready == scan_rst_ni
+scrmbl_arb_req_ready == scanmode_i
+scrmbl_arb_req_ready == part_scrmbl_req_ready
+scrmbl_arb_req_ready == gen_partitions[0].gen_unbuffered.unused_part_scrmbl_sigs
+scrmbl_arb_req_ready == otp_alert_o
+scrmbl_arb_req_ready == devmode_i
+scrmbl_arb_req_ready == tl_reg_d2h
+scrmbl_arb_req_ready == en_ifetch_i
+scrmbl_arb_req_ready == otp_alert_src_o
+scrmbl_arb_req_ready == gen_normal_fifo.empty
+scrmbl_arb_req_ready == gen_normal_fifo.fifo_empty
+scrmbl_arb_req_ready == gen_normal_fifo.under_rst
+scrmbl_arb_req_ready == cnt_clr
+scrmbl_arb_req_ready == otp_cmd_o
+scrmbl_arb_req_ready == otp_size_o
+scrmbl_arb_req_ready == part_sel_oh
+scrmbl_arb_req_ready == data_clr
+scrmbl_arb_req_ready == base_sel_d
+scrmbl_arb_req_ready == base_sel_q
+scrmbl_arb_req_ready == ping_n
+lc_escalate_en == lc_en_o
+unused_buf_data == reg_steer
+core_tl_i == prim_tl_i
+core_tl_i == alert_test_fatal_macro_error_wd
+core_tl_i == unused_be
+core_tl_i == orig(lc_seed_hw_rd_en)
+core_tl_i == orig(lc_dft_en)
+core_tl_i == orig(key_edn_ack)
+core_tl_i == orig(otp_error)
+core_tl_i == orig(fatal_macro_error_d)
+core_tl_i == orig(fatal_macro_error_q)
+core_tl_i == orig(fatal_check_error_d)
+core_tl_i == orig(fatal_check_error_q)
+core_tl_i == orig(fatal_bus_integ_error_d)
+core_tl_i == orig(fatal_bus_integ_error_q)
+core_tl_i == orig(interrupt_triggers_d)
+core_tl_i == orig(interrupt_triggers_q)
+core_tl_i == orig(alerts)
+core_tl_i == orig(alert_test)
+core_tl_i == orig(integ_chk_trig)
+core_tl_i == orig(cnsty_chk_trig)
+core_tl_i == orig(pwr_otp_rsp_q)
+core_tl_i == orig(unused_lci_scrmbl_sigs)
+core_tl_i == orig(scrmbl_key_seed_valid)
+core_tl_i == orig(sram_data_key_seed)
+core_tl_i == orig(unused_kdi_otp_sigs)
+core_tl_i == orig(rma_token_valid)
+core_tl_i == orig(secrets_valid)
+core_tl_i == orig(unused_buf_data)
+core_tl_i == orig(gen_partitions[1].gen_unbuffered.unused_part_scrmbl_sigs)
+core_tl_i == orig(gen_partitions[2].gen_unbuffered.unused_part_scrmbl_sigs)
+core_tl_i == orig(gen_partitions[3].gen_buffered.unused_part_tlul_sigs)
+core_tl_i == orig(gen_partitions[4].gen_buffered.unused_part_tlul_sigs)
+core_tl_i == orig(gen_partitions[5].gen_buffered.unused_part_tlul_sigs)
+core_tl_i == orig(gen_partitions[6].gen_buffered.unused_part_tlul_sigs)
+core_tl_i == orig(gen_partitions[7].gen_lifecycle.unused_part_tlul_sigs)
+core_tl_i == orig(gen_partitions[7].gen_lifecycle.unused_part_scrmbl_sigs)
+core_tl_i == orig(edn_o)
+core_tl_i == orig(core_tl_i)
+core_tl_i == orig(prim_tl_i)
+core_tl_i == orig(otp_ast_pwr_seq_o)
+core_tl_i == orig(lc_otp_vendor_test_i)
+core_tl_i == orig(reg_steer)
+core_tl_i == orig(intr_state_we)
+core_tl_i == orig(alert_test_we)
+core_tl_i == orig(alert_test_fatal_macro_error_wd)
+core_tl_i == orig(status_bus_integ_error_qs)
+core_tl_i == orig(status_dai_idle_qs)
+core_tl_i == orig(status_check_pending_qs)
+core_tl_i == orig(err_code_re)
+core_tl_i == orig(err_code_err_code_0_qs)
+core_tl_i == orig(err_code_err_code_1_qs)
+core_tl_i == orig(vendor_test_digest_0_re)
+core_tl_i == orig(direct_access_cmd_gated_we)
+core_tl_i == orig(direct_access_address_gated_we)
+core_tl_i == orig(direct_access_wdata_0_gated_we)
+core_tl_i == orig(direct_access_wdata_1_gated_we)
+core_tl_i == orig(check_trigger_qe)
+core_tl_i == orig(check_trigger_flds_we)
+core_tl_i == orig(check_trigger_gated_we)
+core_tl_i == orig(check_timeout_gated_we)
+core_tl_i == orig(unused_be)
+core_tl_i == orig(gen_buffs[4].lc_en_out)
+otp_ast_pwr_seq_h_i == pwr_seq_h_i
+tl_win_d2h == prim_tl_d2h_gated
+tl_win_d2h == tl_win_i
+tl_win_d2h == tl_o_int
+tl_win_d2h == tl_out
+tl_win_d2h == tl_d2h_i
+tl_win_d2h == test_tl_o
+part_access == part_access_pre
+part_access_dai == part_access_i
+reg_addr == reg_wdata
+reg_addr == reg_be
+reg_addr == addr_hit
+reg_addr == reg_rdata
+reg_addr == reg_rdata_next
+reg_addr == orig(chk_pending)
+reg_addr == orig(chk_timeout)
+reg_addr == orig(lfsr_fsm_err)
+reg_addr == orig(scrmbl_fsm_err)
+reg_addr == orig(integ_chk_req)
+reg_addr == orig(reg_we)
+reg_addr == orig(reg_re)
+reg_addr == orig(reg_addr)
+reg_addr == orig(reg_wdata)
+reg_addr == orig(reg_be)
+reg_addr == orig(intr_state_otp_operation_done_qs)
+reg_addr == orig(intr_state_otp_error_qs)
+reg_addr == orig(intr_enable_otp_operation_done_qs)
+reg_addr == orig(intr_enable_otp_error_qs)
+reg_addr == orig(direct_access_address_qs)
+reg_addr == orig(direct_access_wdata_0_qs)
+reg_addr == orig(direct_access_wdata_1_qs)
+reg_addr == orig(check_trigger_regwen_qs)
+reg_addr == orig(check_regwen_qs)
+reg_addr == orig(check_timeout_qs)
+reg_addr == orig(integrity_check_period_qs)
+reg_addr == orig(consistency_check_period_qs)
+reg_addr == orig(vendor_test_read_lock_qs)
+reg_addr == orig(creator_sw_cfg_read_lock_qs)
+reg_addr == orig(owner_sw_cfg_read_lock_qs)
+reg_addr == orig(addr_hit)
+reg_addr == orig(intg_err_o)
+reg_addr == orig(reg_rdata)
+reg_addr == orig(reg_error)
+reg_addr == orig(addrmiss)
+reg_addr == orig(wr_err)
+reg_addr == orig(reg_rdata_next)
+reg_addr == orig(reg_busy)
+reg_addr == orig(intg_err)
+reg_addr == orig(reg_we_err)
+check_trigger_regwen_qs == check_regwen_qs
+check_trigger_regwen_qs == vendor_test_read_lock_qs
+check_trigger_regwen_qs == creator_sw_cfg_read_lock_qs
+check_trigger_regwen_qs == owner_sw_cfg_read_lock_qs
+intr_enable_otp_operation_done_wd == orig(lc_escalate_en_i)
+intr_enable_otp_operation_done_wd == orig(dai_idle)
+intr_enable_otp_operation_done_wd == orig(dai_rdata)
+intr_enable_otp_operation_done_wd == orig(otp_rsp_fifo_ready)
+intr_enable_otp_operation_done_wd == orig(otp_fifo_valid)
+intr_enable_otp_operation_done_wd == orig(scrmbl_mtx_valid)
+intr_enable_otp_operation_done_wd == orig(part_init_req)
+intr_enable_otp_operation_done_wd == orig(pwr_otp_req_synced)
+intr_enable_otp_operation_done_wd == orig(rst_ni)
+intr_enable_otp_operation_done_wd == orig(test_tokens_valid)
+intr_enable_otp_operation_done_wd == orig(pwr_otp_i)
+intr_enable_otp_operation_done_wd == orig(sram_otp_key_i)
+intr_enable_otp_operation_done_wd == orig(intr_enable_otp_operation_done_wd)
+intr_enable_otp_operation_done_wd == orig(err_code_err_code_7_qs)
+intr_enable_otp_operation_done_wd == orig(tl_o)
+intr_enable_otp_operation_done_wd == orig(gen_buffs[1].lc_en_out)
+intr_enable_otp_operation_done_wd == orig(wmask_o)
+intr_enable_otp_operation_done_wd == orig(rvalid_i)
+intr_enable_otp_operation_done_wd == orig(rspfifo_rvalid)
+intr_enable_otp_operation_done_wd == orig(sramreqfifo_rready)
+intr_enable_otp_operation_done_wd == orig(gen_normal_case.gen_tree[3].gen_level[0].gen_nodes.sel)
+intr_enable_otp_operation_done_wd == orig(gen_normal_case.gen_tree[3].gen_level[1].gen_nodes.sel)
+intr_enable_otp_operation_done_wd == orig(gen_normal_case.gen_tree[3].gen_level[2].gen_nodes.sel)
+intr_enable_otp_operation_done_wd == orig(gen_normal_case.gen_tree[3].gen_level[3].gen_nodes.sel)
+intr_enable_otp_operation_done_wd == orig(gen_normal_case.gen_tree[3].gen_level[4].gen_nodes.sel)
+intr_enable_otp_operation_done_wd == orig(wready_o)
+intr_enable_otp_operation_done_wd == orig(rvalid_o)
+intr_enable_otp_operation_done_wd == orig(depth_o)
+intr_enable_otp_operation_done_wd == orig(gen_normal_fifo.rptr_msb)
+intr_enable_otp_operation_done_wd == orig(gen_normal_fifo.rptr_value)
+intr_enable_otp_operation_done_wd == orig(key_state_sel)
+intr_enable_otp_operation_done_wd == orig(cnt)
+intr_enable_otp_operation_done_wd == orig(dec_idx_out)
+intr_enable_otp_operation_done_wd == orig(data_state_en)
+intr_enable_otp_operation_done_wd == orig(key_state_en)
+intr_enable_otp_operation_done_wd == orig(digest_mode_d)
+intr_enable_otp_operation_done_wd == orig(digest_mode_q)
+intr_enable_otp_operation_done_wd == orig(cnt_en)
+intr_enable_otp_operation_done_wd == orig(d_i)
+intr_enable_otp_operation_done_wd == orig(q_o)
+intr_enable_otp_operation_done_wd == orig(intq)
+intr_enable_otp_operation_done_wd == orig(d_o)
+intr_enable_otp_operation_done_wd == orig(part_init_req_o)
+intr_enable_otp_operation_done_wd == orig(init_req_i)
+intr_enable_otp_operation_done_wd == orig(gen_no_flops.unused_logic)
+intr_enable_otp_operation_done_wd == orig(alert_nq)
+intr_enable_otp_operation_done_wd == orig(ack_n)
+intr_enable_otp_operation_done_wd == orig(alert_nd)
+direct_access_regwen_qs == direct_access_cmd_we
+direct_access_regwen_qs == check_trigger_we
+direct_access_regwen_qs == intg_error_o
+direct_access_regwen_qs == rd_vld_error
+direct_access_cmd_rd_wd == direct_access_cmd_wr_wd
+direct_access_cmd_rd_wd == check_trigger_regwen_wd
+direct_access_cmd_rd_wd == check_trigger_integrity_wd
+direct_access_cmd_rd_wd == check_trigger_consistency_wd
+direct_access_cmd_rd_wd == wr_attr_error
+direct_access_cmd_rd_wd == instr_error
+direct_access_cmd_rd_wd == wr_vld_error
+direct_access_cmd_rd_wd == orig(direct_access_regwen_qs)
+direct_access_cmd_rd_wd == orig(direct_access_cmd_we)
+direct_access_cmd_rd_wd == orig(direct_access_cmd_rd_wd)
+direct_access_cmd_rd_wd == orig(direct_access_cmd_wr_wd)
+direct_access_cmd_rd_wd == orig(check_trigger_regwen_wd)
+direct_access_cmd_rd_wd == orig(check_trigger_we)
+direct_access_cmd_rd_wd == orig(check_trigger_integrity_wd)
+direct_access_cmd_rd_wd == orig(check_trigger_consistency_wd)
+direct_access_cmd_rd_wd == orig(req_type_o)
+direct_access_cmd_rd_wd == orig(intg_error_o)
+direct_access_cmd_rd_wd == orig(error_det)
+direct_access_cmd_rd_wd == orig(error_internal)
+direct_access_cmd_rd_wd == orig(wr_attr_error)
+direct_access_cmd_rd_wd == orig(instr_error)
+direct_access_cmd_rd_wd == orig(wr_vld_error)
+direct_access_cmd_rd_wd == orig(rd_vld_error)
+direct_access_cmd_digest_wd == direct_access_address_wd
+direct_access_cmd_digest_wd == direct_access_wdata_0_wd
+direct_access_cmd_digest_wd == direct_access_wdata_1_wd
+direct_access_cmd_digest_wd == check_regwen_wd
+direct_access_cmd_digest_wd == check_timeout_wd
+direct_access_cmd_digest_wd == integrity_check_period_wd
+direct_access_cmd_digest_wd == consistency_check_period_wd
+direct_access_cmd_digest_wd == vendor_test_read_lock_wd
+direct_access_cmd_digest_wd == creator_sw_cfg_read_lock_wd
+direct_access_cmd_digest_wd == unused_tl_i_int
+direct_access_cmd_digest_wd == orig(direct_access_cmd_digest_wd)
+direct_access_cmd_digest_wd == orig(direct_access_address_we)
+direct_access_cmd_digest_wd == orig(direct_access_address_wd)
+direct_access_cmd_digest_wd == orig(direct_access_wdata_0_we)
+direct_access_cmd_digest_wd == orig(direct_access_wdata_0_wd)
+direct_access_cmd_digest_wd == orig(direct_access_wdata_1_we)
+direct_access_cmd_digest_wd == orig(direct_access_wdata_1_wd)
+direct_access_cmd_digest_wd == orig(direct_access_rdata_0_re)
+direct_access_cmd_digest_wd == orig(direct_access_rdata_0_qs)
+direct_access_cmd_digest_wd == orig(direct_access_rdata_1_re)
+direct_access_cmd_digest_wd == orig(direct_access_rdata_1_qs)
+direct_access_cmd_digest_wd == orig(check_trigger_regwen_we)
+direct_access_cmd_digest_wd == orig(check_regwen_we)
+direct_access_cmd_digest_wd == orig(check_regwen_wd)
+direct_access_cmd_digest_wd == orig(check_timeout_we)
+direct_access_cmd_digest_wd == orig(check_timeout_wd)
+direct_access_cmd_digest_wd == orig(integrity_check_period_we)
+direct_access_cmd_digest_wd == orig(integrity_check_period_wd)
+direct_access_cmd_digest_wd == orig(consistency_check_period_we)
+direct_access_cmd_digest_wd == orig(consistency_check_period_wd)
+direct_access_cmd_digest_wd == orig(vendor_test_read_lock_we)
+direct_access_cmd_digest_wd == orig(vendor_test_read_lock_wd)
+direct_access_cmd_digest_wd == orig(creator_sw_cfg_read_lock_we)
+direct_access_cmd_digest_wd == orig(creator_sw_cfg_read_lock_wd)
+direct_access_cmd_digest_wd == orig(tlul_error)
+direct_access_cmd_digest_wd == orig(intg_error_q)
+direct_access_cmd_digest_wd == orig(unused_tl_i_int)
+direct_access_cmd_digest_wd == orig(reqfifo_wvalid)
+direct_access_cmd_digest_wd == orig(reqfifo_rready)
+direct_access_cmd_digest_wd == orig(sramreqfifo_wvalid)
+direct_access_cmd_digest_wd == orig(timer_en_i)
+direct_access_address_we == direct_access_wdata_0_we
+direct_access_address_we == direct_access_wdata_1_we
+direct_access_address_we == direct_access_rdata_0_re
+direct_access_address_we == direct_access_rdata_0_qs
+direct_access_address_we == direct_access_rdata_1_re
+direct_access_address_we == direct_access_rdata_1_qs
+direct_access_address_we == check_trigger_regwen_we
+direct_access_address_we == check_regwen_we
+direct_access_address_we == check_timeout_we
+direct_access_address_we == integrity_check_period_we
+direct_access_address_we == consistency_check_period_we
+direct_access_address_we == vendor_test_read_lock_we
+direct_access_address_we == creator_sw_cfg_read_lock_we
+direct_access_address_we == intg_error_q
+direct_access_address_we == reqfifo_wvalid
+direct_access_address_we == reqfifo_rready
+direct_access_address_we == sramreqfifo_wvalid
+direct_access_address_we == timer_en_i
+gen_buffs[0].lc_en_out == gen_buffs[6].lc_en_out
+gen_buffs[0].lc_en_out == gen_buffs[7].lc_en_out
+gen_buffs[0].lc_en_out == gen_buffs[8].lc_en_out
+gen_buffs[0].lc_en_out == gen_buffs[9].lc_en_out
+gen_buffs[0].lc_en_out == gen_buffs[10].lc_en_out
+gen_buffs[0].lc_en_out == gen_buffs[11].lc_en_out
+gen_buffs[0].lc_en_out == gen_buffs[12].lc_en_out
+gnt_i == gen_normal_case.mask_tree
+wdata_o == data_i
+error_det == error_internal
+d_ack == wmask_intg
+d_ack == gen_rmask.rmask
+d_valid == d_error
+d_valid == unused_rerror
+wdata_combined == reqfifo_rdata
+wdata_combined == ready_i
+wdata_intg == gen_normal_case.gen_tree[2].gen_level[0].gen_nodes.sel
+wdata_intg == fsm_err_o
+rdata_tlword == lfsr_err
+gen_write_output[0].gen_ft_output.unused_w == edn_data_i
+gen_write_output[0].gen_ft_output.unused_w == cnsty_period_msk_i
+rspfifo_rdata == hw2reg_intr_state_d_o
+tl_i_int == sramreqfifo_wdata
+tl_i_int == orig(tl_i_int)
+tl_i_int == orig(sramreqfifo_wdata)
+reqfifo_wdata == orig(reqfifo_wdata)
+reg2hw_intr_test_q_i == orig(reg2hw_intr_test_q_i)
+reg2hw_intr_test_qe_i == integ_chk_trig_d
+edn_req_o == cnsty_set_period
+cnsty_chk_trig_i == integ_cnt_set
+timeout_i == clr_integ_chk_trig
+reseed_en == cnsty_chk_req_q
+unused_seed == cnsty_cnt_pause
+cnsty_cnt_set_val == tl_h2d_o
+integ_set_period == integ_set_timeout
+integ_chk_trig_q == cnt
+tl_h2d_i == orig(cnsty_mask)
+tl_h2d_i == orig(tl_h2d_i)
+gen_normal_fifo.fifo_rptr == idx_state_q
+gen_normal_fifo.storage == orig(data_o)
+gen_normal_fifo.storage == orig(gen_normal_fifo.storage)
+gen_normal_fifo.storage_rdata == gen_normal_fifo.rdata_int
+gen_normal_fifo.storage_rdata == orig(otp_part_idx)
+gen_normal_fifo.storage_rdata == orig(part_init_done)
+gen_normal_fifo.storage_rdata == orig(gen_buffs[2].lc_en_out)
+gen_normal_fifo.storage_rdata == orig(gen_normal_case.gen_tree[3].gen_level[5].gen_nodes.sel)
+gen_normal_fifo.storage_rdata == orig(gen_normal_fifo.storage_rdata)
+gen_normal_fifo.storage_rdata == orig(gen_normal_fifo.rdata_int)
+gen_normal_fifo.storage_rdata == orig(part_init_done_i)
+idx_state_d == enc_idx_out
+digest_state_d == enc_data_out_xor
+key_out_q == key_out_d
+nonce_out_d == nonce_out_q
+mubi_i == mubi_o
+mubi_i == gen_digest_write_lock.digest_locked
+mubi == mubi_int
+mubi == mubi_out
+access_o == access_pre
+dout_locked_q == dout_locked_d
+intr_otp_operation_done_o one of { "0", "340282366920938463463374607431768211455" }
+intr_otp_error_o one of { "0", "115792089237316195423570985008687907853269984665640564039457584007913129639935" }
+otp_obs_o == "0"
+lc_creator_seed_sw_rw_en_i one of { "115792089237316195423570985008687907853269984665640564039457584007913129639935", "4" }
+lc_seed_hw_rd_en_i one of { "0", "4" }
+lc_escalate_en_i one of { "1", "4" }
+otp_ext_voltage_h_io one of { "-1", "0" }
+lc_seed_hw_rd_en one of { "-1", "4" }
+lc_check_byp_en one of { "4", "4611967493404037800" }
+lc_dft_en one of { "-1", "1092" }
+lc_escalate_en_synced one of { "1200959900632132", "4611967493404040363" }
+tlul_part_sel_oh one of { "1", "1365" }
+part_tlul_gnt one of { "0", "21" }
+part_tlul_rvalid one of { "0", "9" }
+dai_idle one of { "0", "1" }
+part_fsm_err one of { "0", "76929471251750273848705239152733669396455464067492991403832661799783757349583688569989482106092830086063723883749486922549573336706976304338739120746100928825705426436057757869217668698291864920494724962663677471" }
+chk_pending one of { "0", "10" }
+integ_chk_ack one of { "11603140796640482181934107735354621288516690183869728570366104519228760058119211113841405277988778536421407799364291269405337896094424859170096043740625628757636836003848644706998690879492529217543597544426088144575303174442800751388880087259293822810833463385577328781843166096743421348121563232764743764697843480398066874398281984", "7" }
+cnsty_chk_req one of { "0", "8468245980088003815891821825495532090310173034801818317346864731096662640359258587573247547151725062839368065877681532158326002998569369511014551868106791" }
+cnsty_chk_ack one of { "0", "7" }
+lfsr_edn_req one of { "0", "101033739191003473222579476271154853872284958806122770116538354065392859767432" }
+edn_data one of { "0", "21674255512270216372172778503958891098521617017449217772278033365021575888256014489461322286073034613772581683819995407826803957391436472701922811988814389115584781723513868340568987771031768981740978949020309861841138338005800608392" }
+edn_ack one of { "0", "5477049976260990844452462555705366641599183751325370442376" }
+key_edn_req one of { "0", "46423099417978118591375198419350446110007263810945801745642414207396612837977494644316540655375179696746278853694145949219741138084188908363896320784424802578446806008183529584870695347615456989" }
+key_edn_ack one of { "-1", "0" }
+otp_prim_ready == "1"
+part_otp_rdata one of { "0", "16861473430380568471" }
+otp_part_idx one of { "0", "7" }
+part_scrmbl_mtx_req one of { "0", "120" }
+scrmbl_mtx_idx one of { "0", "4" }
+part_scrmbl_rsp_data one of { "0", "16203251043219506942" }
+scrmbl_arb_req_ready one of { "0", "1" }
+lc_escalate_en one of { "0", "1200959900632132" }
+part_otp_rvalid one of { "0", "128" }
+part_scrmbl_mtx_gnt one of { "0", "16" }
+sram_data_key_seed one of { "-1", "177294864880298620563638643791125026013" }
+unused_buf_data one of { "-1", "1" }
+core_tl_i == "-1"
+core_tl_o one of { "0", "4611967493404037800" }
+prim_tl_o one of { "0", "4611967493404040363" }
+alert_rx_i == "1365"
+alert_tx_o == "21"
+otp_ast_pwr_seq_h_i one of { "0", "2" }
+otbn_otp_key_o one of { "0", "5477049976260990844452462555705366641599183751325370442376" }
+tl_win_d2h one of { "4611967493404033192", "4611967493404033193" }
+part_access one of { "0", "200166098174805891005350180090414721385" }
+scrmbl_req_bundle one of { "0", "2962132529720886237153" }
+part_access_dai one of { "200166098188787331449043837052514822505", "200166098188787331449043886724569536150" }
+obs_ctrl_i one of { "0", "9" }
+reg_addr one of { "-1", "10" }
+check_trigger_regwen_qs one of { "1", "10" }
+intr_enable_otp_operation_done_wd one of { "-1", "1" }
+direct_access_regwen_qs one of { "0", "150" }
+direct_access_cmd_rd_wd one of { "-1", "150" }
+direct_access_cmd_digest_wd one of { "-1", "105" }
+direct_access_address_we one of { "0", "105" }
+hw_cfg_digest_0_qs one of { "0", "2193015709" }
+hw_cfg_digest_1_qs one of { "0", "3749153669" }
+secret0_digest_0_qs one of { "0", "2102496240" }
+secret0_digest_1_qs one of { "0", "1240228061" }
+tl_o_pre one of { "0", "4611967493404033192" }
+tl_o one of { "1", "4611967493404037800" }
+lc_en_i one of { "4", "4294967295" }
+lc_en one of { "10", "42" }
+gen_buffs[0].lc_en_out one of { "0", "10" }
+gen_buffs[1].lc_en_out one of { "1", "10" }
+gen_buffs[2].lc_en_out one of { "10", "7" }
+gen_buffs[3].lc_en_out one of { "10", "128" }
+gen_buffs[4].lc_en_out one of { "-1", "10" }
+gen_buffs[5].lc_en_out one of { "10", "16" }
+gnt_i one of { "0", "5" }
+wdata_o one of { "0", "5326738963678989296" }
+req_type_o one of { "15", "150" }
+error_det one of { "1", "150" }
+tlul_error one of { "1", "105" }
+a_ack one of { "0", "233" }
+d_ack one of { "0", "255" }
+sram_ack one of { "0", "252" }
+d_valid one of { "0", "191" }
+vld_rd_rsp one of { "0", "215" }
+error_blanking_data one of { "4294967295", "95" }
+unused_instr one of { "0", "151" }
+unused_data one of { "255", "4294967295" }
+error_instr_integ one of { "154", "42" }
+error_data_integ one of { "42", "63" }
+error_blanking_integ one of { "107", "42" }
+d_data one of { "180", "4294967295" }
+data_intg one of { "251", "42" }
+woffset one of { "0", "249" }
+wmask_combined one of { "0", "48" }
+wdata_combined one of { "0", "253" }
+wmask_int one of { "0", "135" }
+wdata_int one of { "0", "181" }
+wdata_intg one of { "0", "251" }
+rdata_reshaped one of { "0", "121" }
+rdata_tlword one of { "0", "195" }
+gen_write_output[0].gen_ft_output.unused_w one of { "0", "58" }
+sramreqfifo_rdata one of { "0", "83" }
+rspfifo_rdata one of { "0", "207" }
+tl_i_int one of { "-1", "239" }
+reqfifo_wdata one of { "-1", "210" }
+rspfifo_wdata one of { "0", "159" }
+req_i one of { "1", "207" }
+gnt_o one of { "0", "229" }
+idx_o one of { "0", "189" }
+valid_o one of { "1", "92" }
+data_o one of { "119", "4294967295" }
+gen_normal_case.req_tree one of { "139", "53" }
+gen_normal_case.gnt_tree one of { "0", "31" }
+gen_normal_case.idx_tree one of { "249", "34466326032832" }
+gen_normal_case.gen_tree[0].gen_level[0].gen_nodes.sel one of { "0", "214" }
+gen_normal_case.gen_tree[1].gen_level[0].gen_nodes.sel one of { "0", "63" }
+gen_normal_case.gen_tree[1].gen_level[1].gen_nodes.sel one of { "1", "227" }
+gen_normal_case.gen_tree[2].gen_level[1].gen_nodes.sel one of { "1", "118" }
+gen_normal_case.gen_tree[2].gen_level[2].gen_nodes.sel one of { "1", "62" }
+gen_normal_case.gen_tree[2].gen_level[3].gen_nodes.sel one of { "1", "31" }
+event_intr_i one of { "0", "154" }
+reg2hw_intr_enable_q_i one of { "0", "184" }
+reg2hw_intr_test_q_i one of { "-1", "248" }
+reg2hw_intr_test_qe_i one of { "0", "130" }
+reg2hw_intr_state_q_i one of { "0", "169" }
+hw2reg_intr_state_de_o one of { "0", "162" }
+intr_o one of { "0", "22" }
+new_event one of { "0", "84" }
+edn_req_o one of { "0", "46" }
+otp_prog_busy_i one of { "1", "18" }
+integ_chk_trig_i one of { "0", "137" }
+cnsty_chk_trig_i one of { "0", "145" }
+chk_pending_o one of { "0", "80" }
+timeout_i one of { "0", "36" }
+integ_period_msk_i one of { "0", "11" }
+integ_chk_req_o one of { "0", "57" }
+cnsty_chk_req_o one of { "0", "192" }
+integ_chk_ack_i one of { "7", "82" }
+cnsty_chk_ack_i one of { "197", "7" }
+escalate_en_i one of { "12", "4" }
+chk_timeout_o one of { "0", "99" }
+lfsr_state one of { "1086805417934", "251" }
+integ_cnt one of { "0", "213" }
+cnsty_cnt one of { "0", "54" }
+integ_cnt_err one of { "0", "81" }
+cnsty_cnt_err one of { "0", "182" }
+state_q one of { "17", "37" }
+edn_ack_i one of { "0", "164" }
+reseed_en one of { "0", "157" }
+lfsr_en one of { "0", "202" }
+reseed_cnt_d one of { "0", "24" }
+reseed_cnt_q one of { "0", "106" }
+entropy one of { "0", "225" }
+unused_seed one of { "0", "104" }
+integ_cnt_set_val one of { "0", "89" }
+cnsty_cnt_set_val one of { "0", "91" }
+integ_mask one of { "255", "99" }
+cnsty_mask one of { "127", "255" }
+integ_set_period one of { "0", "247" }
+integ_cnt_zero one of { "1", "191" }
+cnsty_set_timeout one of { "0", "124" }
+cnsty_cnt_zero one of { "1", "38" }
+cnsty_cnt_set one of { "0", "125" }
+timeout_zero one of { "1", "220" }
+integ_msk_zero one of { "1", "21" }
+cnsty_msk_zero one of { "1", "235" }
+set_all_integ_reqs one of { "0", "39" }
+set_all_cnsty_reqs one of { "0", "161" }
+integ_chk_req_d one of { "0", "175" }
+integ_chk_req_q one of { "0", "236" }
+cnsty_chk_req_d one of { "0", "147" }
+integ_chk_trig_q one of { "0", "2" }
+cnsty_chk_trig_d one of { "0", "103" }
+cnsty_chk_trig_q one of { "0", "64" }
+state_d one of { "144", "17" }
+chk_timeout_d one of { "0", "94" }
+chk_timeout_q one of { "0", "87" }
+req_chk_i one of { "1", "156" }
+unused_req_chk one of { "1", "211" }
+gen_normal_case.prio_tree one of { "0", "231" }
+gen_normal_case.sel_tree one of { "223", "5" }
+gen_normal_case.data_tree one of { "0", "108" }
+gen_normal_case.prio_mask_d one of { "0", "97" }
+gen_normal_case.prio_mask_q one of { "0", "134" }
+gen_normal_case.unused_prio_tree one of { "0", "156" }
+ack_o one of { "0", "237" }
+word_ack one of { "0", "148" }
+word_data one of { "0", "42" }
+word_fips one of { "0", "112" }
+fips_o one of { "1", "154" }
+err_o one of { "0", "6" }
+word_req one of { "0", "141" }
+fips_d one of { "1", "102" }
+fips_q one of { "1", "163" }
+gen_normal_case.gen_tree[3].gen_level[5].gen_nodes.sel one of { "1", "7" }
+gen_normal_case.gen_tree[3].gen_level[6].gen_nodes.sel one of { "1", "56" }
+gen_normal_case.gen_tree[3].gen_level[7].gen_nodes.sel one of { "1", "6" }
+gen_normal_case.gen_tree[4].gen_level[15].gen_leafs.gen_tie_off.unused_sigs one of { "1", "187" }
+lc_en_buf one of { "101", "279620" }
+tl_h2d_i one of { "-1", "127" }
+tl_d2h_error one of { "242", "4611967493404040363" }
+tl_d2h_o one of { "30", "4611967493404040363" }
+gen_normal_fifo.fifo_rptr one of { "0", "3" }
+gen_normal_fifo.storage one of { "-1", "119" }
+gen_normal_fifo.storage_rdata one of { "-1", "7" }
+idx_state_d one of { "1", "4" }
+key_state_d one of { "0", "326119599420177289208927301862819967659" }
+key_state_q one of { "0", "84600985875610557637611785039786414726" }
+data_state_d one of { "0", "2943011349650190719" }
+digest_state_d one of { "17725431806968543096", "18446744069414584320" }
+digest_state_q one of { "0", "15936778287608661511" }
+enc_data_out one of { "18446744069414584320", "2943011349650190719" }
+dec_data_out one of { "13183162232026537089", "6148914691236517205" }
+dec_key_out one of { "114429980714100239034174537843432270574", "48999163945790996480" }
+enc_key_out one of { "271162511140122838072376640297190293504", "326119599420177289208927301862819967659" }
+dec_idx_out one of { "2", "31" }
+otp_digest_const_mux == "44673164092574283952150430148380433694"
+otp_enc_key_mux == "155501549707994824700277730530708804747"
+otp_dec_key_mux == "79342881490939533593813278354960818731"
+otp_digest_iv_mux == "16915408087132840954"
+digest_addr_lut one of { "0", "1205329754836268191494172" }
+Info one of { "0", "1587555329" }
+PartInfoDefault one of { "0", "32640" }
+sram_data_key_seed_i one of { "0", "177294864880298620563638643791125026013" }
+key_out_q one of { "0", "148455737076846169029564980317182413009" }
+nonce_out_d one of { "0", "337256015343853178630420519502192652612" }
+lc_en_out one of { "10", "5" }
+mubi_i one of { "0", "65" }
+mubi one of { "0", "105" }
+init_locked one of { "20", "65" }
+access_i one of { "0", "26985" }
+access_o one of { "26985", "38550" }
+dout_locked_q one of { "0", "20" }
+gen_digest_read_lock.digest_locked one of { "20", "65" }
+Exiting Daikon.
