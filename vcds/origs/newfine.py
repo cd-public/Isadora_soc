@@ -1,13 +1,13 @@
 def get_mod():
 
-	FILE = "4"
-	NAME = "part_scrmbl_rsp_data"
+	FILE = "1"
+	NAME = "edn_o "
 
 	module = ""
 	for line in open(FILE + ".vcd","r"):
 		if "module" in line:
 			module = line
-		if NAME in line:
+		if " " + NAME in line:
 			print("MOD " + module + " REG " + line)
 		if "dumpvars" in line:
 			break
@@ -31,4 +31,4 @@ def lines():
 			if " " + CODE in line.strip()[-4:]:
 				print(str(cycles) + " " + line)
 			
-lines()
+get_mod()
